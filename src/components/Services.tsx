@@ -1,4 +1,7 @@
 import { service1, check, service2, service3 } from "../assets";
+import housefam from "../assets/housefam.jpg";
+import kitchen from "../assets/kitchen.jpg";
+import remodel1 from "../assets/remodel1.jpg";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import Generating from "./Generating";
 import Heading from "./Heading";
@@ -15,8 +18,8 @@ const Services: React.FC = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Home Remodeling Designs by Gus Paiva"
+          text="See what’s possible in our gallery of real projects."
         />
 
         <div className="relative">
@@ -26,15 +29,15 @@ const Services: React.FC = () => {
                 className="w-full h-full object-cover md:object-right"
                 width={800}
                 height={730}
-                alt="Smartest AI"
-                src={service1}
+                alt="family"
+                src={housefam}
               />
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+              <h4 className="h4 mb-4">Count on us</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                Easy to start enjoying your new home in days.
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -60,19 +63,18 @@ const Services: React.FC = () => {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src={kitchen}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
-                  alt="robot"
+                  alt="kitchen"
                 />
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">Painting</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  You have many options for your home remodel. Try it now!
                 </p>
               </div>
 
@@ -81,10 +83,9 @@ const Services: React.FC = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video Generation</h4>
+                <h4 className="h4 mb-4">Full remodeling</h4>
                 <p className="body-2 mb-[rem] text-n-3">
-                  The world&apos;s most powerful AI photo and video art
-                  generation engine. What will you create?
+                Schedule Your Free In-Home Design Consultation. What do you dream about?
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -113,7 +114,7 @@ const Services: React.FC = () => {
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src={remodel1}
                   className="w-full h-full object-cover"
                   alt="Scary Robot"
                   width={520}

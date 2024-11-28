@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Section from "./Section";
-import { curve, heroBackground, robot } from "../assets";
+import { curve } from "../assets";
+import big_house from "../assets/big_house.jpg";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants/index";
@@ -23,9 +24,9 @@ const Hero: React.FC = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {' '}
+          Effortlessly Beautiful Home Remodeling &nbsp;With&nbsp; {' '}
             <span className="inline-block relative">
-            Brainwave{" "}
+            Us{" "}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -36,8 +37,7 @@ const Hero: React.FC = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleash the power of AI within Brainwave. Upgrade your productivity
-            with Brainwave, the open AI chat app.
+          Remodeling your home with us is fast, easy, and more affordable than you might think.
           </p>
           <Button href="/pricing" white>
             Get Started
@@ -50,11 +50,11 @@ const Hero: React.FC = () => {
 
               <div className="aspect-[33/40] rounded-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src={robot}
+                  src={big_house}
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[20%]"
                   width={1024}
                   height={490}
-                  alt="AI"
+                  alt="house"
                 />
 
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2"/>
@@ -77,15 +77,15 @@ const Hero: React.FC = () => {
             </div>
             <Gradient />
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          {/* <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
-              src={heroBackground}
-              className="w-full"
+              src={brick}
+              className="w-full h-full object-cover opacity-10"
               width={1400}
               height={1800}
-              alt="hero"
+              alt="wall"
             />
-          </div>
+          </div> */}
 
           <BackgroundCircles />
         </div>
