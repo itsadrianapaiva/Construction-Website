@@ -1,4 +1,4 @@
-import { notification1 } from "../assets";
+import bathroom from "../assets/bathroom.jpg";
 import { notificationImages } from "../constants";
 
 const Notification: React.FC<{ className?: string; title?: string }> = ({
@@ -12,7 +12,7 @@ const Notification: React.FC<{ className?: string; title?: string }> = ({
       } flex items-center p-4 pr-6 bg-n-9/40 backdrop-blur border border-n-1/70 rounded-2xl gap-5`}
     >
       <img
-        src={notification1}
+        src={bathroom}
         width={62}
         height={62}
         alt="image"
@@ -26,7 +26,7 @@ const Notification: React.FC<{ className?: string; title?: string }> = ({
             {notificationImages.map((item, index) => (
               <li
                 key={index}
-                className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden"
+                className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden -ml-1.5"
               >
                 <img
                   src={item}
@@ -39,7 +39,7 @@ const Notification: React.FC<{ className?: string; title?: string }> = ({
             ))}
           </ul>
           <div className="body-2 text-n-13">
-            1m ago
+            2d ago
           </div>
         </div>
       </div>

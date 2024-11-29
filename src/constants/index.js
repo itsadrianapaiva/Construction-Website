@@ -42,38 +42,37 @@ import card4Svg from "../assets/benefits/card-4.tsx";
 import card5Svg from "../assets/benefits/card-5.tsx";
 import card6Svg from "../assets/benefits/card-6.tsx";
 
-
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Services",
+    url: "#services",
   },
   {
     id: "1",
+    title: "Portfolio",
+    url: "#portfolio",
+  },
+  {
+    id: "2",
     title: "Pricing",
     url: "#pricing",
   },
   {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "About us",
+    url: "#aboutus",
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
+    title: "+1 416 123 4567",
+    url: "#contactus",
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "Get a Quote",
+    url: "#getaquote",
     onlyMobile: true,
   },
 ];
@@ -83,6 +82,14 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+
+export const stats = [
+  { number: "250+", description: "Projects Delivered" },
+  { number: "100+", description: "Families Served" },
+  { number: "25%", description: "Repeat Business" },
+  { number: "8+", description: "Years of Experience" },
+];
+
 
 export const brainwaveServices = [
   "Photo generating",
@@ -253,7 +260,7 @@ export const benefits = [
     id: "0",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: {card1Svg},
+    backgroundUrl: { card1Svg },
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
@@ -261,7 +268,7 @@ export const benefits = [
     id: "1",
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: {card2Svg},
+    backgroundUrl: { card2Svg },
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
@@ -270,7 +277,7 @@ export const benefits = [
     id: "2",
     title: "Connect everywhere",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: {card3Svg},
+    backgroundUrl: { card3Svg },
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
@@ -278,7 +285,7 @@ export const benefits = [
     id: "3",
     title: "Fast responding",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: {card4Svg},
+    backgroundUrl: { card4Svg },
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
@@ -287,7 +294,7 @@ export const benefits = [
     id: "4",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: {card5Svg},
+    backgroundUrl: { card5Svg },
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
@@ -295,7 +302,7 @@ export const benefits = [
     id: "5",
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: {card6Svg},
+    backgroundUrl: { card6Svg },
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },

@@ -8,7 +8,7 @@ import { heroIcons } from "../constants/index";
 import { ScrollParallax } from "react-just-parallax";
 import Generating from "./Generating";
 import Notification from "./Notification";
-import CompanyLogos from "./CompanyLogos";
+import Stats from "./Stats";
 
 const Hero: React.FC = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -27,19 +27,19 @@ const Hero: React.FC = () => {
           Effortlessly Beautiful Home Remodeling &nbsp;With&nbsp; {' '}
             <span className="inline-block relative">
             Us{" "}
-              <img
+              {/* <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
                 width={624}
                 height={28}
                 alt="Curve"
-              />
+              /> */}
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           Remodeling your home with us is fast, easy, and more affordable than you might think.
           </p>
-          <Button href="/pricing" white>
+          <Button href="/process" white>
             Get Started
           </Button>
         </div>
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
               <div className="aspect-[33/40] rounded-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={big_house}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[20%]"
+                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[10%]"
                   width={1024}
                   height={490}
                   alt="house"
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                 </ScrollParallax>
 
                 <ScrollParallax isAbsolutelyPositioned>
-                    <Notification className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex" title="Code Generation"/>
+                    <Notification className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex" title="Satisfied customer"/>
 
                 </ScrollParallax>
               </div>
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
           <BackgroundCircles />
         </div>
 
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block"/>
+        <Stats className="hidden relative z-10 mt-20 lg:block"/>
       </div>
 
       <BottomLine />
