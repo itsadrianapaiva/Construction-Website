@@ -1,133 +1,68 @@
-import { service1, check, service2, service3 } from "../assets";
-import housefam from "../assets/housefam.jpg";
-import kitchen from "../assets/kitchen.jpg";
-import remodel1 from "../assets/remodel1.jpg";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
-import Generating from "./Generating";
-import Heading from "./Heading";
 import Section from "./Section";
-import {
-  PhotoChatMessage,
-  Gradient,
-  VideoBar,
-  VideoChatMessage,
-} from "./design/Services";
+import Heading from "./Heading";
+import { benefits } from "../constants";
+import Arrow from "../assets/svg/Arrow";
+import { GradientLight } from "./design/Benefits";
+import ClipPath from "../assets/svg/ClipPath";
 
 const Services: React.FC = () => {
   return (
-    <Section id="how-to-use">
-      <div className="container">
+    <Section id="features">
+      <div className="container relative z-2">
         <Heading
-          title="Home Remodeling Designs by Gus Paiva"
-          text="See what’s possible in our gallery of real projects."
+          className="md:max-w-md lg:max-w-2xl"
+          title="Trusted by Homeowners from Coast to Coast"
         />
 
-        <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
-              <img
-                className="w-full h-full object-cover md:object-right"
-                width={800}
-                height={730}
-                alt="family"
-                src={housefam}
-              />
-            </div>
-
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Count on us</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Easy to start enjoying your new home in days.
-              </p>
-              <ul className="body-2">
-                {brainwaveServices.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start py-4 border-t border-n-6"
-                  >
-                    <img width={24} height={24} src={check} />
-                    <p className="ml-4">{item}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <Generating
-              className={
-                "absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg:right-auto  lg:bottom-8 lg:-translate-x-1/2 lg:w-[50rem]"
-              }
-            />
-          </div>
-
-          <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
-              <div className="absolute inset-0">
-                <img
-                  src={kitchen}
-                  className="h-full w-full object-cover"
-                  width={630}
-                  height={750}
-                  alt="kitchen"
-                />
+        <div className="flex flex-wrap gap-10 mb-10">
+          {benefits.map((item) => (
+            <div
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] rounded-2xl bg-conic-gradient"
+              style={{
+                backgroundImage: `${item.backgroundUrl}`,
+              }}
+              key={item.id}
+            >
+              <div className="rounded-[inherit] bg-n-7 p-4">
+              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+                <h5 className="h5 mb-5">{item.title}</h5>
+                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+                <div className="flex items-center mt-auto">
+                  <img
+                    src={item.iconUrl}
+                    width={48}
+                    height={48}
+                    alt={item.title}
+                  />
+                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                    Explore More
+                  </p>
+                  <Arrow />
+                </div>
               </div>
 
-              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Painting</h4>
-                <p className="body-2 mb-[3rem] text-n-3">
-                  You have many options for your home remodel. Try it now!
-                </p>
+              {item.light && <GradientLight />}
+
+              <div className="absolute inset-0.5 bg-n-8"
+              style={{
+                clipPath: "url(#benefits)",
+              }}>
+                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+                  {item.imageUrl && (
+                    <img src={item.imageUrl}
+                    width={380}
+                    height={323}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
               </div>
 
-              <PhotoChatMessage />
+              <ClipPath />
             </div>
-
-            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
-              <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Full remodeling</h4>
-                <p className="body-2 mb-[rem] text-n-3">
-                Schedule Your Free In-Home Design Consultation. What do you dream about?
-                </p>
-
-                <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
-                    <li
-                      key={index}
-                      className={`rounded-2xl flex items-center justify-center ${
-                        index === 2
-                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient  md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
-                      }`}
-                    >
-                      <div
-                        className={
-                          index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
-                            : ""
-                        }
-                      >
-                        <img src={item} width={24} height={24} alt={item} />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
-                <img
-                  src={remodel1}
-                  className="w-full h-full object-cover"
-                  alt="Scary Robot"
-                  width={520}
-                  height={400}
-                />
-
-                <VideoChatMessage />
-                <VideoBar />
-              </div>
             </div>
-          </div>
-
-          <Gradient />
+          ))}
         </div>
       </div>
     </Section>

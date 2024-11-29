@@ -4,7 +4,7 @@ import Button from "./Button";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 import Section from "./Section";
 
-const Collaboration: React.FC = () => {
+const Process: React.FC = () => {
   return (
     <Section crosses>
       <div className="container lg:flex">
@@ -79,4 +79,4 @@ const Collaboration: React.FC = () => {
   );
 };
 
-export default Collaboration;
+export default Process;

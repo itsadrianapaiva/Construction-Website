@@ -5,7 +5,7 @@ import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 
-const Benefits: React.FC = () => {
+const Portfolio: React.FC = () => {
   return (
     <Section id="features">
       <div className="container relative z-2">
@@ -69,4 +69,4 @@ const Benefits: React.FC = () => {
   );
 };
 
-export default Benefits;
+export default Portfolio;

@@ -6,7 +6,7 @@ import Heading from "./Heading";
 import Section from "./Section";
 import Tagline from "./Tagline";
 
-const Roadmap: React.FC = () => {
+const Reviews: React.FC = () => {
   return (
     <Section className="overflow-hidden" id="roadmap">
       <div className="container md:pb-10">
@@ -80,4 +80,4 @@ const Roadmap: React.FC = () => {
   );
 };
 
-export default Roadmap;
+export default Reviews;
