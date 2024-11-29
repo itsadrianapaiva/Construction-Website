@@ -5,7 +5,7 @@ import { CounterProps } from "../types/components";
 const Counter: React.FC<CounterProps> = ({
   start = 0,
   end,
-  duration = 2000,
+  duration = 5000,
 }) => {
   const [count, setCount] = useState(start);
 
