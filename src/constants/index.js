@@ -42,6 +42,12 @@ import card4Svg from "../assets/benefits/card-4.tsx";
 import card5Svg from "../assets/benefits/card-5.tsx";
 import card6Svg from "../assets/benefits/card-6.tsx";
 
+import heroicon1 from "../assets/hero/heroicon1.svg";
+import heroicon2 from "../assets/hero/heroicon2.svg";
+import heroicon3 from "../assets/hero/heroicon3.svg";
+import heroicon4 from "../assets/hero/heroicon4.svg";
+
+
 export const navigation = [
   {
     id: "0",
@@ -77,18 +83,17 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export const heroIcons = [heroicon4, heroicon2, heroicon1, heroicon3];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
 export const stats = [
-  { number: "250+", description: "Projects Delivered" },
-  { number: "100+", description: "Families Served" },
-  { number: "25%", description: "Repeat Business" },
-  { number: "8+", description: "Years of Experience" },
+  { end: 250, operator: "+", description: "Projects Delivered" },
+  { end: 100, operator: "+", description: "Families Served" },
+  { end: 25, operator: "%", description: "Repeat Business" },
+  { end: 8, operator: "+", description: "Years of Experience" },
 ];
+
 
 
 export const brainwaveServices = [

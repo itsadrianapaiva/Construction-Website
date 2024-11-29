@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Section from "./Section";
-import { curve } from "../assets";
 import big_house from "../assets/big_house.jpg";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -9,6 +8,7 @@ import { ScrollParallax } from "react-just-parallax";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import Stats from "./Stats";
+
 
 const Hero: React.FC = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);

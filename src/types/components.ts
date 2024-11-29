@@ -23,3 +23,10 @@ export interface HeadingProps {
   text?: string;
   tag?: string;
   }
+
+
+  export interface CounterProps {
+    start?: number;
+    end: number;
+    duration?: number; //in milliseconds
+  }

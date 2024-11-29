@@ -102,4 +102,10 @@ declare module "src/constants/index.js" {
     iconUrl: string;
     url: string;
   }[];
+
+  const stats: {
+    end: number;
+    operator: string;
+    description: string;
+  }[];
 }
