@@ -50,7 +50,15 @@ import serviceImg4 from "../assets/services/serviceImg4.jpg";
 import serviceImg5 from "../assets/services/serviceImg5.jpg";
 import serviceImg6 from "../assets/services/serviceImg6.jpg";
 
-
+import processMainLogo from "../assets/process/processMainLogo.svg";
+import process1 from "../assets/process/process1.svg";
+import process2 from "../assets/process/process2.svg";
+import process3 from "../assets/process/process3.svg";
+import process4 from "../assets/process/process4.svg";
+import process5 from "../assets/process/process5.svg";
+import process6 from "../assets/process/process6.svg";
+import process7 from "../assets/process/process7.svg";
+import process8 from "../assets/process/process8.svg";
 
 
 export const navigation = [
@@ -151,6 +159,43 @@ export const roadmap = [
   },
 ];
 
+export const processText =  
+  "From initial consultation to project completion, we ensure a seamless and stress-free experience for our clients.";  
+
+export const processContent = [  
+  {  
+    id: "0",  
+    title: "Initial Consultation",  
+    text: "Discuss your vision, requirements, and budget with our experts to set the foundation for your project.",  
+  },  
+  {  
+    id: "1",  
+    title: "Design and Planning",  
+    text: "Our team crafts detailed designs and plans tailored to your needs, ensuring everything is aligned before construction begins.",  
+  },  
+  {  
+    id: "2",  
+    title: "Approval and Permits",  
+    text: "We handle all necessary approvals and permits, so you can focus on envisioning your dream space.",  
+  },  
+  {  
+    id: "3",  
+    title: "Construction and Remodeling",  
+    text: "Skilled professionals bring your project to life with precision and care, keeping you updated throughout the process.",  
+  },  
+  {  
+    id: "4",  
+    title: "Final Walkthrough",  
+    text: "Join us for a comprehensive walkthrough to ensure every detail meets your expectations.",  
+  },  
+  {  
+    id: "5",  
+    title: "Project Completion",  
+    text: "Enjoy your newly remodeled space, backed by our commitment to quality and satisfaction.",  
+  },  
+];  
+
+
 export const collabText =
   "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
@@ -228,6 +273,66 @@ export const collabApps = [
     height: 32,
   },
 ];
+
+export const processIcons = [
+  {
+    id: "0",
+    title: "Process1",
+    icon: process1,
+    width: 26,
+    height: 36,
+  },
+  {
+    id: "1",
+    title: "Process2",
+    icon: process2,
+    width: 34,
+    height: 36,
+  },
+  {
+    id: "2",
+    title: "Process3",
+    icon: process3,
+    width: 36,
+    height: 28,
+  },
+  {
+    id: "3",
+    title: "Process4",
+    icon: process4,
+    width: 34,
+    height: 35,
+  },
+  {
+    id: "4",
+    title: "Process5",
+    icon: process5,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "5",
+    title: "Process6",
+    icon: process6,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "6",
+    title: "Process7",
+    icon: process7,
+    width: 26,
+    height: 34,
+  },
+  {
+    id: "7",
+    title: "Process8",
+    icon: process8,
+    width: 38,
+    height: 32,
+  }
+];
+
 
 export const pricing = [
   {

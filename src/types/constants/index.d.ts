@@ -14,20 +14,13 @@ declare module "src/constants/index.js" {
       }
   )[];
 
-  const collabText: string;
+  const processContent: {
+    id: string;
+    title: string;
+    text: string;
+  }[];
 
-  const collabContent: (
-    | {
-        id: string;
-        title: string;
-        text: string;
-      }
-    | {
-        id: string;
-        title: string;
-        text?: undefined;
-      }
-  )[];
+  const processText: string;
 
   const collabApps: {
     id: string;
@@ -88,21 +81,24 @@ declare module "src/constants/index.js" {
     description: string;
   }[];
 
-  const services: ({
-    id: string;
-    title: string;
-    text: string;
-    backgroundUrl: string;
-    iconUrl: string;
-    imageUrl: string;
-    light?: undefined;
-} | {
-    id: string;
-    title: string;
-    text: string;
-    backgroundUrl: string;
-    iconUrl: string;
-    imageUrl: string;
-    light: boolean;
-})[];
+  const services: (
+    | {
+        id: string;
+        title: string;
+        text: string;
+        backgroundUrl: string;
+        iconUrl: string;
+        imageUrl: string;
+        light?: undefined;
+      }
+    | {
+        id: string;
+        title: string;
+        text: string;
+        backgroundUrl: string;
+        iconUrl: string;
+        imageUrl: string;
+        light: boolean;
+      }
+  )[];
 }
