@@ -15,7 +15,7 @@ import {
 
 const AboutUs: React.FC = () => {
   return (
-    <Section id="how-to-use">
+    <Section id="aboutus">
       <div className="container">
         <Heading
           title="Home Remodeling Designs by Gus Paiva"

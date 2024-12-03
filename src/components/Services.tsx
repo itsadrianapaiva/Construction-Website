@@ -7,7 +7,7 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Services: React.FC = () => {
   return (
-    <Section id="features">
+    <Section id="services">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"

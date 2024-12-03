@@ -27,13 +27,6 @@ const Hero: React.FC = () => {
           Effortlessly Beautiful Home Remodeling &nbsp;With&nbsp; {' '}
             <span className="inline-block relative">
             Us{" "}
-              {/* <img
-                src={curve}
-                className="absolute top-full left-0 w-full xl:-mt-2"
-                width={624}
-                height={28}
-                alt="Curve"
-              /> */}
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
@@ -43,15 +36,15 @@ const Hero: React.FC = () => {
             Get Started
           </Button>
         </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+        <div className="relative max-w-[30rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-0 bg-n-10 rounded-t-[0.9rem]" />
+              <div className="bg-n-10 rounded-t-[0.9rem]" />
 
-              <div className="aspect-[33/40] rounded-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+              <div className="aspect-[33/20] rounded-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src={big_house}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[10%]"
+                  className="w-full scale-[1.2] translate-y-[5%] md:scale-[1.3] md:translate-y-[10%] lg:-translate-y-[10%]"
                   width={1024}
                   height={490}
                   alt="house"
@@ -77,15 +70,15 @@ const Hero: React.FC = () => {
             </div>
             <Gradient />
           </div>
-          {/* <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          <div className="absolute -top-[130%] left-1/2 w-[234%] h-[208%] -translate-x-1/2 md:h[218%] md:-top-[134%] md:translate-y-[15%] md:w-[221.5%] lg:-top-[130%] lg:scale-130">
             <img
-              src={brick}
-              className="w-full h-full object-cover opacity-10"
+              src={big_house}
+              className="w-full h-full object-cover opacity-20"
               width={1400}
-              height={1800}
-              alt="wall"
+              height={1200}
+              alt="house"
             />
-          </div> */}
+          </div>
 
           <BackgroundCircles />
         </div>

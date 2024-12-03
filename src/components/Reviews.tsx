@@ -8,7 +8,7 @@ import Tagline from "./Tagline";
 
 const Reviews: React.FC = () => {
   return (
-    <Section className="overflow-hidden" id="roadmap">
+    <Section className="overflow-hidden" id="reviews">
       <div className="container md:pb-10">
         <Heading tag="Ready to get started" title="What we're working on" />
 
