@@ -67,6 +67,43 @@ import aboutIcon3 from "../assets/about/aboutIcon3.svg";
 import aboutIcon4 from "../assets/about/aboutIcon4.svg";
 import aboutIcon5 from "../assets/about/aboutIcon5.svg";
 
+import apt1 from "../assets/portfolio/apt1.jpg";
+import bathroom1 from "../assets/portfolio/bathroom1.jpg";
+import bathroom2 from "../assets/portfolio/bathroom2.jpg";
+import bathroom3 from "../assets/portfolio/bathroom3.jpg";
+import bedroom1 from "../assets/portfolio/bedroom1.jpg";
+import brick1 from "../assets/portfolio/brick1.jpg";
+import brick2 from "../assets/portfolio/brick2.jpg";
+import deck1 from "../assets/portfolio/deck1.jpg";
+import dining1 from "../assets/portfolio/dining1.jpg";
+import exterior1 from "../assets/portfolio/exterior1.jpg";
+import exterior2 from "../assets/portfolio/exterior2.jpg";
+import exterior3 from "../assets/portfolio/exterior3.jpg";
+import exterior4 from "../assets/portfolio/exterior4.jpg";
+import floor1 from "../assets/portfolio/floor1.jpg";
+import frontdoor1 from "../assets/portfolio/frontdoor1.jpg";
+import hall from "../assets/portfolio/hall.jpg";
+import house1 from "../assets/portfolio/house1.jpg";
+import house2 from "../assets/portfolio/house2.jpg";
+import house3 from "../assets/portfolio/house3.jpg";
+import house4 from "../assets/portfolio/house4.jpg";
+import kitchen from "../assets/portfolio/kitchen.jpg";
+import kitchen1 from "../assets/portfolio/kitchen1.jpg";
+import kitchen2 from "../assets/portfolio/kitchen2.jpg";
+import kitchen3 from "../assets/portfolio/kitchen3.jpg";
+import kitchen4 from "../assets/portfolio/kitchen4.jpg";
+import kitchen5 from "../assets/portfolio/kitchen5.jpg";
+import living1 from "../assets/portfolio/living1.jpg";
+import outside1 from "../assets/portfolio/outside1.jpg";
+import pool1 from "../assets/portfolio/pool1.jpg";
+import project1 from "../assets/portfolio/project1.jpg";
+import project2 from "../assets/portfolio/project2.jpg";
+import project3 from "../assets/portfolio/project3.jpg";
+import room1 from "../assets/portfolio/room1.jpg";
+import room2 from "../assets/portfolio/room2.jpg";
+import shower1 from "../assets/portfolio/shower1.jpg";
+import working1 from "../assets/portfolio/working1.jpg";
+
 export const navigation = [
   {
     id: "0",
@@ -127,14 +164,6 @@ aboutIcon2,
 aboutIcon5,
 aboutIcon4,
 aboutIcon3
-];
-
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
 ];
 
 export const roadmap = [
@@ -208,85 +237,6 @@ export const processContent = [
     text: "Enjoy your newly remodeled space, backed by our commitment to quality and satisfaction.",  
   },  
 ];  
-
-
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "Seamless Integration",
-    text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
-];
-
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
-    width: 36,
-    height: 28,
-  },
-  {
-    id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
-  },
-  {
-    id: "4",
-    title: "Photoshop",
-    icon: photoshop,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
-  },
-  {
-    id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
-  },
-];
 
 export const processIcons = [
   {
@@ -435,6 +385,45 @@ export const services = [
     iconUrl: services6,
     imageUrl: serviceImg6,
   },
+];
+
+export const portfolio = [
+apt1,
+bathroom1,
+bathroom2,
+bathroom3,
+bedroom1,
+brick1,
+brick2,
+deck1,
+dining1,
+exterior1,
+exterior2,
+exterior3,
+exterior4,
+floor1,
+frontdoor1,
+hall,
+house1,
+house2,
+house3,
+house4,
+kitchen,
+kitchen1,
+kitchen2,
+kitchen3,
+kitchen4,
+kitchen5,
+living1,
+outside1,
+pool1,
+project1,
+project2,
+project3,
+room1,
+room2,
+shower1,
+working1
 ];
 
 

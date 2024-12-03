@@ -22,7 +22,7 @@ declare module "src/constants/index.js" {
 
   const processText: string;
 
-  const collabApps: {
+  const processIcons: {
     id: string;
     title: string;
     icon: string;

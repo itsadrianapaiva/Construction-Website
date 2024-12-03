@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
       <div className="container">
         <Heading
           title="Home Remodeling Designs by Gus Paiva"
-          text="See what’s possible in our gallery of real projects."
+          text="Building trust through quality and dedication, one home at a time."
         />
 
         <div className="relative">

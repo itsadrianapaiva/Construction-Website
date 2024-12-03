@@ -6,6 +6,7 @@ export interface ButtonProps {
     children?: React.ReactNode;
     px?: string;
     white?: boolean;
+    disabled?: boolean;
   }
 
   export interface SectionProps {
