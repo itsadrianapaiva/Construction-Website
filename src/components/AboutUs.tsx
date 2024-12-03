@@ -133,7 +133,7 @@ const AboutUs: React.FC = () => {
                 <img
                   src={remodel1}
                   className="w-full h-full object-cover"
-                  alt="Scary Robot"
+                  alt="House"
                   width={520}
                   height={400}
                 />

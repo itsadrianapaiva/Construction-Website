@@ -158,10 +158,11 @@ export const stats = [
 
 
 
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+export const whatToExpect = [
+  "Your remodel goals",
+  "Design options",
+  "Timeline and cost",
+  "Warranty and post-install service",
 ];
 
 export const aboutUsIcons = [
