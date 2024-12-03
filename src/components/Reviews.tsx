@@ -54,7 +54,7 @@ const Reviews: React.FC = () => {
                     <div className="mb-10 -my-10 -mx-15">
                       <img
                         src={item.imageUrl}
-                        className="w-full"
+                        className="w-full h-[550px] object-stretch"
                         width={430}
                         height={220}
                         alt={item.title}
@@ -71,10 +71,6 @@ const Reviews: React.FC = () => {
           })}
 
           <Gradient />
-        </div>
-
-        <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-          <Button href="/portfolio">Our projects</Button>
         </div>
       </div>
     </Section>
