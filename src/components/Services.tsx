@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { benefits } from "../constants";
+import { services } from "../constants";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
@@ -15,7 +15,7 @@ const Services: React.FC = () => {
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item) => (
+          {services.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] rounded-2xl bg-conic-gradient"
               style={{
@@ -34,7 +34,8 @@ const Services: React.FC = () => {
                     height={48}
                     alt={item.title}
                   />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  {/* turn the p below into anchor */}
+                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider cursor-pointer">
                     Explore More
                   </p>
                   <Arrow />
@@ -43,11 +44,11 @@ const Services: React.FC = () => {
 
               {item.light && <GradientLight />}
 
-              <div className="absolute inset-0.5 bg-n-8"
+              <div className="absolute inset-0.5 bg-n-8 rounded-2xl"
               style={{
-                clipPath: "url(#benefits)",
+                clipPath: "url(#services)",
               }}>
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20">
                   {item.imageUrl && (
                     <img src={item.imageUrl}
                     width={380}

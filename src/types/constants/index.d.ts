@@ -14,27 +14,6 @@ declare module "src/constants/index.js" {
       }
   )[];
 
-  const benefits: (
-    | {
-        id: string;
-        title: string;
-        text: string;
-        backgroundUrl: React.FC<React.SVGProps<SVGSVGElement>>;
-        iconUrl: string;
-        imageUrl: string;
-        light?: undefined;
-      }
-    | {
-        id: string;
-        title: string;
-        text: string;
-        backgroundUrl: React.FC<React.SVGProps<SVGSVGElement>>;
-        iconUrl: string;
-        imageUrl: string;
-        light: boolean;
-      }
-  )[];
-
   const collabText: string;
 
   const collabContent: (
@@ -108,4 +87,22 @@ declare module "src/constants/index.js" {
     operator: string;
     description: string;
   }[];
+
+  const services: ({
+    id: string;
+    title: string;
+    text: string;
+    backgroundUrl: string;
+    iconUrl: string;
+    imageUrl: string;
+    light?: undefined;
+} | {
+    id: string;
+    title: string;
+    text: string;
+    backgroundUrl: string;
+    iconUrl: string;
+    imageUrl: string;
+    light: boolean;
+})[];
 }

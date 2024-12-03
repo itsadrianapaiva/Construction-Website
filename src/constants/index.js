@@ -1,9 +1,4 @@
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
   chromecast,
   disc02,
   discord,
@@ -33,19 +28,29 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
 } from "../assets";
-import card1Svg from "../assets/benefits/card-1.tsx";
-import card2Svg from "../assets/benefits/card-2.tsx";
-import card3Svg from "../assets/benefits/card-3.tsx";
-import card4Svg from "../assets/benefits/card-4.tsx";
-import card5Svg from "../assets/benefits/card-5.tsx";
-import card6Svg from "../assets/benefits/card-6.tsx";
 
 import heroicon1 from "../assets/hero/heroicon1.svg";
 import heroicon2 from "../assets/hero/heroicon2.svg";
 import heroicon3 from "../assets/hero/heroicon3.svg";
 import heroicon4 from "../assets/hero/heroicon4.svg";
+import exterior from "../assets/exterior.jpg";
+
+import services1 from "../assets/services/services1.svg";
+import services2 from "../assets/services/services2.svg";
+import services3 from "../assets/services/services3.svg";
+import services4 from "../assets/services/services4.svg";
+import services5 from "../assets/services/services5.svg";
+import services6 from "../assets/services/services6.svg";
+
+import serviceImg1 from "../assets/services/serviceImg1.jpg";
+import serviceImg2 from "../assets/services/serviceImg2.jpg";
+import serviceImg3 from "../assets/services/serviceImg3.jpg";
+import serviceImg4 from "../assets/services/serviceImg4.jpg";
+import serviceImg5 from "../assets/services/serviceImg5.jpg";
+import serviceImg6 from "../assets/services/serviceImg6.jpg";
+
+
 
 
 export const navigation = [
@@ -260,58 +265,59 @@ export const pricing = [
   },
 ];
 
-export const benefits = [
+export const services = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: { card1Svg },
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    title: "Custom Home Building",
+    text: "We bring your dream home to life with personalized designs and expert craftsmanship.",
+    backgroundUrl: exterior,
+    iconUrl: services1,
+    imageUrl: serviceImg1,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: { card2Svg },
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    title: "Kitchen Remodeling",
+    text: "Transform your kitchen into a functional and stylish space tailored to your needs.",
+    backgroundUrl: exterior,
+    iconUrl: services2,
+    imageUrl: serviceImg2,
     light: true,
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: { card3Svg },
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    title: "Bathroom Renovations",
+    text: "Upgrade your bathroom with modern fixtures, elegant designs, and superior finishes.",
+    backgroundUrl: exterior,
+    iconUrl: services3,
+    imageUrl: serviceImg3,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: { card4Svg },
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
+    title: "Room Additions",
+    text: "Expand your living space seamlessly with expertly designed and constructed additions.",
+    backgroundUrl: exterior,
+    iconUrl: services4,
+    imageUrl: serviceImg4,
     light: true,
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: { card5Svg },
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    title: "Exterior Improvements",
+    text: "Enhance curb appeal with new siding, roofing, decks, and other exterior upgrades.",
+    backgroundUrl: exterior,
+    iconUrl: services5,
+    imageUrl: serviceImg5,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: { card6Svg },
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    title: "Commercial Renovations",
+    text: "Revitalize your business space to align with your brand and operational needs.",
+    backgroundUrl: exterior,
+    iconUrl: services6,
+    imageUrl: serviceImg6,
   },
 ];
+
 
 export const socials = [
   {

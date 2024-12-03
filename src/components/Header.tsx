@@ -66,12 +66,12 @@ const Header: React.FC = () => {
           <HamburgerMenu />
         </nav>
 
-        <a
+        {/* <a
           href="#contactus"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           +1 (416) 234 5678
-        </a>
+        </a> */}
         <Button className="hidden lg:flex" href="#getaquote" children="Get a Quote" />
 
         <Button
