@@ -35,7 +35,7 @@ export const BottomLine: React.FC = () => {
 //   );
 // };
 
-export const BackgroundCircles: React.FC<{ parallaxRef?: React.RefObject<HTMLDivElement>}> = ({ parallaxRef }) => {
+export const BackgroundBricks: React.FC<{ parallaxRef?: React.RefObject<HTMLDivElement>}> = ({ parallaxRef }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -44,55 +44,76 @@ export const BackgroundCircles: React.FC<{ parallaxRef?: React.RefObject<HTMLDiv
 
   return (
     <div className="absolute -top-[42.375rem] left-1/2 w-[78rem] opacity-50 aspect-square border border-n-2/5 rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-[32rem]">
-      {/* <Rings /> */}
-
-      {/* Moving background colored circle balls */}
       <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
         <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">
           <div
-            className={`w-2 h-2 -ml-1 -mt-36 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-2 h-4 -ml-1 -mt-36 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
+            style={{
+              clipPath: 'polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%)', 
+              transform: 'skew(-5deg)'
+            }}
           />
         </div>
 
         <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[56deg]">
           <div
-            className={`w-4 h-4 -ml-1 -mt-32 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-4 h-6 -ml-1 -mt-32 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
+            style={{
+              clipPath: 'polygon(10% 0%, 90% 0%, 80% 100%, 20% 100%)', 
+              transform: 'skew(5deg)'
+            }}
           />
         </div>
 
         <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[54deg]">
           <div
-            className={`hidden w-4 h-4 -ml-1 mt-[12.9rem] bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] rounded-full xl:block transit transition-transform duration-500 ease-out ${
+            className={`hidden w-4 h-6 -ml-1 mt-[12.9rem] bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] xl:block transit transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
+            style={{
+              clipPath: 'polygon(15% 0%, 85% 0%, 75% 100%, 25% 100%)', 
+              transform: 'skew(-3deg)'
+            }}
           />
         </div>
 
         <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[65deg]">
           <div
-            className={`w-3 h-3 -ml-1.5 mt-52 bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-3 h-5 -ml-1.5 mt-52 bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
+            style={{
+              clipPath: 'polygon(20% 0%, 80% 0%, 70% 100%, 30% 100%)', 
+              transform: 'skew(2deg)'
+            }}
           />
         </div>
 
         <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[85deg]">
           <div
-            className={`w-6 h-6 -ml-3 -mt-3 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-6 h-8 -ml-3 -mt-3 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
+            style={{
+              clipPath: 'polygon(5% 0%, 95% 0%, 90% 100%, 10% 100%)', 
+              transform: 'skew(-7deg)'
+            }}
           />
         </div>
 
         <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[70deg]">
           <div
-            className={`w-6 h-6 -ml-3 -mt-3 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-6 h-8 -ml-3 -mt-3 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
+            style={{
+              clipPath: 'polygon(10% 0%, 90% 0%, 85% 100%, 15% 100%)', 
+              transform: 'skew(6deg)'
+            }}
           />
         </div>
       </MouseParallax>

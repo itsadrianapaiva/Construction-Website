@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Section from "./Section";
 import big_house from "../assets/big_house.jpg";
 import Button from "./Button";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundBricks, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants/index";
 import { ScrollParallax } from "react-just-parallax";
 import Generating from "./Generating";
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
             />
           </div>
 
-          <BackgroundCircles />
+          <BackgroundBricks />
         </div>
 
         <Stats className="hidden relative z-10 mt-20 lg:block"/>
