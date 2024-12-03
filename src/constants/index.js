@@ -104,6 +104,12 @@ import room2 from "../assets/portfolio/room2.jpg";
 import shower1 from "../assets/portfolio/shower1.jpg";
 import working1 from "../assets/portfolio/working1.jpg";
 
+import review1 from "../assets/roadmap/review1.jpg";
+import review2 from "../assets/roadmap/review2.jpg";
+import review3 from "../assets/roadmap/review3.jpg";
+import review4 from "../assets/roadmap/review4.jpg";
+import stars from "../assets/roadmap/stars.jpg";
+
 export const navigation = [
   {
     id: "0",
@@ -201,6 +207,47 @@ export const roadmap = [
     imageUrl: roadmap4,
   },
 ];
+
+export const testimonies = [
+  {
+    id: "0",
+    title: "Exceptional Craftsmanship",
+    text: "“Gus and his team transformed our outdated kitchen into a modern masterpiece. Their attention to detail and professionalism were outstanding!”",
+    author: "Sarah L., Toronto, ON",
+    imageUrl: review1, // Replace with actual image of the client or a placeholder
+    colorful: true, // Use this to style standout testimonials if needed
+    status: "done",
+    date: "Dec 2017",
+  },
+  {
+    id: "1",
+    title: "Stress-Free Experience",
+    text: "“From start to finish, the process was seamless. They respected our time, budget, and vision. Highly recommend!”",
+    author: "John D., Mississauga, ON",
+    imageUrl: stars,
+    status: "done",
+    date: "May 2019",
+  },
+  {
+    id: "2",
+    title: "Highly Trustworthy",
+    text: "“It's rare to find contractors who genuinely care. Gus ensured we were informed and comfortable at every step.”",
+    author: "Emily R., Oakville, ON",
+    imageUrl: review4,
+    status: "done",
+    date: "Feb 2022",
+  },
+  {
+    id: "3",
+    title: "Flawless Results",
+    text: "“The final results exceeded our expectations. The quality and dedication they bring to their work are unmatched.”",
+    author: "Mark P., Brampton, ON",
+    imageUrl: review2,
+    status: "in progress",
+    date: "Jun 2024",
+  },
+];
+
 
 export const processText =  
   "From initial consultation to project completion, we ensure a seamless and stress-free experience for our clients.";  

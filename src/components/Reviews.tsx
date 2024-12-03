@@ -1,5 +1,5 @@
 import { check2, grid, loading1 } from "../assets";
-import { roadmap } from "../constants";
+import { testimonies } from "../constants";
 import Button from "./Button";
 import { Gradient } from "./design/Roadmap";
 import Heading from "./Heading";
@@ -10,10 +10,10 @@ const Reviews: React.FC = () => {
   return (
     <Section className="overflow-hidden" id="reviews">
       <div className="container md:pb-10">
-        <Heading tag="Ready to get started" title="What we're working on" />
+        <Heading tag="What our clients say" title="Hear from homeowners who trusted us " />
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-          {roadmap.map((item) => {
+          {testimonies.map((item) => {
             const status: string =
               item.status === "done" ? "Done" : "In Progress";
 
@@ -55,14 +55,15 @@ const Reviews: React.FC = () => {
                       <img
                         src={item.imageUrl}
                         className="w-full"
-                        width={630}
-                        height={420}
+                        width={430}
+                        height={220}
                         alt={item.title}
                       />
                     </div>
 
                     <h4 className="h4 mb-4">{item.title}</h4>
-                    <p className="body-2 text-n-4">{item.text}</p>
+                    <p className="body-2 text-n-4 mb-5">{item.text}</p>
+                    <p className="ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider cursor-pointer text-right">{item.author}</p>
                   </div>
                 </div>
               </div>
@@ -73,7 +74,7 @@ const Reviews: React.FC = () => {
         </div>
 
         <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-          <Button href="/roadmap">Our projects</Button>
+          <Button href="/portfolio">Our projects</Button>
         </div>
       </div>
     </Section>
