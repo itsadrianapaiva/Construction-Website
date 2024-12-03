@@ -8,13 +8,13 @@ import Section from "./Section";
 const Process: React.FC = () => {
   return (
     <Section crosses id="process">
-      <div className="container lg:flex">
-        <div className="max-w-[25rem]">
+      <div className="container lg:flex justify-center">
+        <div className="max-w-[40rem] ml-10">
           <h2 className="h2 -mt-15 mb-4 md:mb-10">
            How it works
           </h2>
 
-          <ul className="max-w-[22rem] mb-10 md:mb-14">
+          <ul className="max-w-[32rem] mb-10 md:mb-14">
             {processContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
@@ -31,8 +31,8 @@ const Process: React.FC = () => {
           <Button>Call us now</Button>
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[40rem] lg:max-auto">
+        <div className="lg:ml-auto xl:w-[48rem] mt-4">
+          <p className="body-2 mb-8 ml-auto text-n-4 md:mb-16 lg:mb-32 lg:w-[40rem] lg:max-auto">
             {processText}
           </p>
 
