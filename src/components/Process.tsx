@@ -44,7 +44,7 @@ const Process: React.FC = () => {
                     src={processMainLogo}
                     width={100}
                     height={100}
-                    alt="brainwave"
+                    alt="logo"
                   />
                 </div>
               </div>

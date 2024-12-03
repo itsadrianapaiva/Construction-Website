@@ -1,8 +1,7 @@
-import { check } from "../assets";
 import housefam from "../assets/housefam.jpg";
 import kitchen from "../assets/kitchen.jpg";
 import remodel1 from "../assets/remodel1.jpg";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+import { aboutUsIcons } from "../constants";
 import Generating from "./Generating";
 import Heading from "./Heading";
 import Section from "./Section";
@@ -34,12 +33,30 @@ const AboutUs: React.FC = () => {
               />
             </div>
 
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Count on us</h4>
+            <div className="relative z-1 max-w-[37rem] ml-auto">
+              <h4 className="h4 mb-4">About us</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Easy to start enjoying your new home in days.
+                At the heart of our company is Gus Paiva, a seasoned contractor
+                with a passion for transforming spaces since 2016. Starting in
+                Dallas, Texas, and now proudly serving the Greater Toronto Area
+                (GTA), Gus brings a wealth of experience and a family-driven
+                approach to every project.
               </p>
-              <ul className="body-2">
+
+              <p className="body-2 mb-[3rem] text-n-3">
+                We believe that every client deserves respect for their time,
+                vision, and investment. That’s why our family-run company is
+                committed to understanding your unique needs and delivering
+                exceptional results. With a focus on integrity, craftsmanship,
+                and personalized service, we’re here to make your construction
+                and remodeling journey seamless and rewarding.
+              </p>
+
+              <p className="body-2 mb-[3rem] text-n-3">
+                Your dream project is our priority, and we’re honored to bring
+                it to life with care and dedication.
+              </p>
+              {/* <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
                   <li
                     key={index}
@@ -49,7 +66,7 @@ const AboutUs: React.FC = () => {
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
 
             <Generating
@@ -72,9 +89,9 @@ const AboutUs: React.FC = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Painting</h4>
+                <h4 className="h4 mb-4">Trustworthy expertise</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  You have many options for your home remodel. Try it now!
+                Your peace of mind is our priority. With years of proven experience and a family-driven approach, we deliver quality you can trust in every detail of your project.
                 </p>
               </div>
 
@@ -83,25 +100,25 @@ const AboutUs: React.FC = () => {
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Full remodeling</h4>
-                <p className="body-2 mb-[rem] text-n-3">
-                Schedule Your Free In-Home Design Consultation. What do you dream about?
+                <h4 className="h4 mb-4">Clear communication</h4>
+                <p className="body-2 mb-[1.8rem] text-n-3">
+                We keep you informed at every step, ensuring transparency and a shared vision from the initial consultation to project completion.
                 </p>
 
                 <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
+                  {aboutUsIcons.map((item, index) => (
                     <li
                       key={index}
-                      className={`rounded-2xl flex items-center justify-center ${
+                      className={`rounded-2xl flex items-center justify-center bg-n-13/40 ${
                         index === 2
                           ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient  md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                          : "flex w-10 h-10 md:w-15 md:h-15"
                       }`}
                     >
                       <div
                         className={
                           index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
+                            ? "flex items-center justify-center w-full h-full bg-n-13/60 rounded-[1rem]"
                             : ""
                         }
                       >

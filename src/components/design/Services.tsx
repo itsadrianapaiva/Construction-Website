@@ -1,5 +1,6 @@
-import { brainwaveWhiteSymbol, gradient, play } from "../../assets";
+import { gradient, play } from "../../assets";
 import ChatBubbleWing from "../../assets/svg/ChatBubbleWing";
+import person from "../../assets/about/person.svg";
 
 export const Gradient: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ export const Gradient: React.FC = () => {
 export const PhotoChatMessage: React.FC = () => {
   return (
     <div className="absolute top-8 right-8 max-w-[17.5rem] py-6 px-8 bg-black rounded-t-xl rounded-bl-xl font-code text-base lg:top-16 lg:right-[8.75rem] lg:max-w-[17.5rem]">
-      Hey Brainwave, enhance this photo
+      Hey Gus, I just want to thank you for your patience and professionalism.
       <ChatBubbleWing className="absolute left-full bottom-0" />
     </div>
   );
@@ -27,13 +28,13 @@ export const PhotoChatMessage: React.FC = () => {
 export const VideoChatMessage: React.FC = () => {
   return (
     <div className="absolute top-8 left-[3.125rem] w-full max-w-[14rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-br-xl font-code text-base md:max-w-[17.5rem]">
-      Video generated!
+      I can't believe this is my home!
       <div className="absolute left-5 -bottom-[1.125rem] flex items-center justify-center w-[2.25rem] h-[2.25rem] bg-color-1 rounded-[0.75rem]">
         <img
-          src={brainwaveWhiteSymbol}
+          src={person}
           width={26}
           height={26}
-          alt="Brainwave"
+          alt="Person"
         />
       </div>
       <p className="tagline absolute right-2.5 bottom-1 text-[0.625rem] text-n-3 uppercase">

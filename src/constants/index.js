@@ -61,6 +61,12 @@ import process7 from "../assets/process/process7.svg";
 import process8 from "../assets/process/process8.svg";
 
 
+import aboutIcon1 from "../assets/about/aboutIcon1.svg";
+import aboutIcon2 from "../assets/about/aboutIcon2.svg";
+import aboutIcon3 from "../assets/about/aboutIcon3.svg";
+import aboutIcon4 from "../assets/about/aboutIcon4.svg";
+import aboutIcon5 from "../assets/about/aboutIcon5.svg";
+
 export const navigation = [
   {
     id: "0",
@@ -113,6 +119,14 @@ export const brainwaveServices = [
   "Photo generating",
   "Photo enhance",
   "Seamless Integration",
+];
+
+export const aboutUsIcons = [
+aboutIcon1,
+aboutIcon2,
+aboutIcon5,
+aboutIcon4,
+aboutIcon3
 ];
 
 export const brainwaveServicesIcons = [
