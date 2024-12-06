@@ -7,6 +7,7 @@ export interface ButtonProps {
     px?: string;
     white?: boolean;
     disabled?: boolean;
+    type?: "button" | "submit" | "reset" | undefined;
   }
 
   export interface SectionProps {
@@ -30,4 +31,17 @@ export interface HeadingProps {
     start?: number;
     end: number;
     duration?: number; //in milliseconds
+  }
+
+  export interface FormProps {
+    name: string;
+    email: string;
+    phone: string;
+    address: string;
+    city: string;
+    province: string;
+    postalCode: string;
+    referral: string;
+    projectType: string;
+    projectDescription: string;
   }

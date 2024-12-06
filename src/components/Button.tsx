@@ -9,6 +9,7 @@ const Button: React.FC<ButtonProps> = ({
   px,
   white = false,
   disabled = false,
+  type = "submit",
 }) => {
   const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
     px || "px-7"
@@ -16,7 +17,12 @@ const Button: React.FC<ButtonProps> = ({
   const spanClasses = "relative z-10";
 
   const renderButton = () => (
-    <button className={classes} onClick={onClick} disabled={disabled}>
+    <button
+      className={classes}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+    >
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
     </button>

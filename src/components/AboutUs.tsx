@@ -56,17 +56,6 @@ const AboutUs: React.FC = () => {
                 Your dream project is our priority, and we’re honored to bring
                 it to life with care and dedication.
               </p>
-              {/* <ul className="body-2">
-                {brainwaveServices.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start py-4 border-t border-n-6"
-                  >
-                    <img width={24} height={24} src={check} />
-                    <p className="ml-4">{item}</p>
-                  </li>
-                ))}
-              </ul> */}
             </div>
 
             <Generating

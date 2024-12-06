@@ -6,14 +6,14 @@ import living_room from "../assets/living_room.jpg";
 import toronto from "../assets/toronto.jpg";
 import {
   Gradient,
-  PhotoChatMessage,
   VideoChatMessage,
 } from "./design/Services";
 import ContactForm from "./ContactForm";
+import MapComponent from "./Map";
 
 const ContactUs: React.FC = () => {
   return (
-    <Section id="contactUs">
+    <Section id="contactUs" crosses>
       <div className="container">
       <Heading
         title="Contact us today"
@@ -21,17 +21,18 @@ const ContactUs: React.FC = () => {
       />
 
       <div className="relative">
-        <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-        <div className="absolute inset-0">
+        <div className="relative z-1 flex flex-col items-center h-auto mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden sm:flex-wrap lg:p-20 xl:h-[60rem]">
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none  xl:w-auto">
               <img
                 src={living_room}
                 className="h-full w-full object-cover opacity-15"
-                width={630}
-                height={750}
+                width={730}
+                height={850}
                 alt="Living room"
               />
             </div>
-          <div className="relative z-1 max-w-[25rem] ml-auto">
+
+          <div className="relative z-1 max-w-[25rem]">
             <h4 className="h4 mb-4">What to expect </h4>
             <p className="body-2 mb-[3rem] text-n-3">
               We’ve completed hundreds of remodeling projects successfully and
@@ -39,7 +40,7 @@ const ContactUs: React.FC = () => {
               consultation:
             </p>
 
-            <ul className="body-2">
+            <ul className="body-2 mb-[3rem]">
               {whatToExpect.map((item, index) => (
                 <li
                   key={index}
@@ -50,10 +51,12 @@ const ContactUs: React.FC = () => {
                 </li>
               ))}
             </ul>
+
+            <MapComponent />
           </div>
 
-          <div className="max-w-[58rem] ml-20">
-            <p className="body-2 mb-[3rem] text-n-3">
+          <div className="max-w-[38rem] h-[58rem] flex flex-col">
+            <p className="body-2 text-n-3">
               We want to know all about your project and how we can better serve
               you. 
               <br />
@@ -77,7 +80,7 @@ const ContactUs: React.FC = () => {
             </div>
 
             <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-              <h4 className="h4 mb-4">Trustworthy expertise</h4>
+              <h4 className="h4 mb-4">Or you can call us directly</h4>
               <p className="body-2 mb-[3rem] text-n-3">
                 Your peace of mind is our priority. With years of proven
                 experience and a family-driven approach, we deliver quality you
@@ -85,16 +88,14 @@ const ContactUs: React.FC = () => {
               </p>
             </div>
 
-            <PhotoChatMessage />
+            
           </div>
 
           <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
             <div className="py-12 px-4 xl:px-8">
-              <h4 className="h4 mb-4">Clear communication</h4>
+              <h4 className="h4 mb-4">Or you can call us directly</h4>
               <p className="body-2 mb-[1.8rem] text-n-3">
-                We keep you informed at every step, ensuring transparency and a
-                shared vision from the initial consultation to project
-                completion.
+                Gus Paiva (437) 448-4788
               </p>
 
               <ul className="flex items-center justify-between">
