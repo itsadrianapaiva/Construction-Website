@@ -44,4 +44,5 @@ export interface HeadingProps {
     referral: string;
     projectType: string;
     projectDescription: string;
+    [key: string]: unknown;
   }

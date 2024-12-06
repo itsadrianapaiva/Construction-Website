@@ -20,7 +20,7 @@ const ContactUs: React.FC = () => {
         />
 
         <div className="relative">
-          <div className="relative z-1 flex flex-col items-center h-auto mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden sm:flex-wrap lg:p-20 xl:h-[60rem]">
+          <div className="relative z-1 flex flex-col items-center h-auto mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden sm:flex-wrap lg:p-20 xl:h-[65rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none xl:w-auto">
               <img
                 src={living_room}
@@ -52,7 +52,7 @@ const ContactUs: React.FC = () => {
               </ul>
             </div>
 
-            <div className="xl:max-w-[38rem] h-[58rem] flex flex-col xl:h-[58rem]">
+            <div className="xl:max-w-[38rem] h-[65rem] flex flex-col xl:h-[72rem]">
               <p className="body-2 text-n-3">
                 We want to know all about your project and how we can better
                 serve you.

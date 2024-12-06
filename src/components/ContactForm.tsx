@@ -1,18 +1,38 @@
+import React from "react";
 import Button from "./Button";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { FormProps } from "../types/components";
-
+import emailjs from "emailjs-com";
 
 const ContactForm: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors }, reset
   } = useForm<FormProps>();
 
   const onSubmit: SubmitHandler<FormProps> = (data) => {
-    console.log("Form submitted:", data);
-    alert("Thank you! We'll get back to you shortly.");
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      alert("Email service is not configured properly.");
+      console.error("Missing EmailJS environment variables.");
+      return;
+    }
+
+    emailjs
+      .send(serviceId, templateId, data, publicKey)
+      .then(() => {
+        alert("Message sent successfully!");
+        reset(); 
+      })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      alert("Failed to send the message. Please try again later.");
+    });
   };
 
   return (

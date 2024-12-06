@@ -72,7 +72,7 @@ const Header: React.FC = () => {
         >
           +1 (416) 234 5678
         </a> */}
-        <Button className="hidden lg:flex" href="#getaquote" children="Get a Quote" />
+        <Button className="hidden lg:flex" href="#contactUs" children="Get a Quote" />
 
         <Button
           className="ml-auto lg:hidden"
