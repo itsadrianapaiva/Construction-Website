@@ -25,18 +25,24 @@ export const PhotoChatMessage: React.FC = () => {
   );
 };
 
-export const VideoChatMessage: React.FC = () => {
+export const VideoChatMessage: React.FC<{ message?: string, image?: string }> = ({ message, image }) => {
+  const defaultMessage = "I can't believe this is my home!";
+  const displayMessage = message || defaultMessage;
+
+
   return (
     <div className="absolute top-8 left-[3.125rem] w-full max-w-[14rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-br-xl font-code text-base md:max-w-[17.5rem]">
-      I can't believe this is my home!
-      <div className="absolute left-5 -bottom-[1.125rem] flex items-center justify-center w-[2.25rem] h-[2.25rem] bg-color-1 rounded-[0.75rem]">
-        <img
-          src={person}
-          width={26}
-          height={26}
-          alt="Person"
-        />
-      </div>
+      {displayMessage}
+      {image && (
+        <div className="absolute left-5 -bottom-[1.125rem] flex items-center justify-center w-[2.25rem] h-[2.25rem] bg-color-1 rounded-[0.75rem]">
+          <img
+            src={person}
+            width={26}
+            height={26}
+            alt="Person"
+          />
+        </div>
+      )}
       <p className="tagline absolute right-2.5 bottom-1 text-[0.625rem] text-n-3 uppercase">
         just now
       </p>

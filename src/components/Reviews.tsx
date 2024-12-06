@@ -50,12 +50,10 @@ const Reviews: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="mb-10 -my-10 -mx-15">
+                    <div className="mb-10 md:my-15 -mx-15">
                       <img
                         src={item.imageUrl}
-                        className="w-full h-[550px] object-stretch"
-                        width={430}
-                        height={220}
+                        className="w-full h-[320px] object-cover object-center"
                         alt={item.title}
                       />
                     </div>

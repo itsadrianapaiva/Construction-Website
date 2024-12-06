@@ -11,10 +11,12 @@ import {
   VideoBar,
   VideoChatMessage,
 } from "./design/Services";
+import person from "../assets/about/person.svg";
+
 
 const AboutUs: React.FC = () => {
   return (
-    <Section id="aboutus">
+    <Section id="aboutus" crosses>
       <div className="container">
         <Heading
           title="Home Remodeling Designs by Gus Paiva"
@@ -25,7 +27,7 @@ const AboutUs: React.FC = () => {
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
               <img
-                className="w-full h-full object-cover md:object-right"
+                className="w-full h-full object-cover md:object-right md:opacity-30 opacity-30 xl:opacity-100"
                 width={800}
                 height={730}
                 alt="family"
@@ -35,7 +37,7 @@ const AboutUs: React.FC = () => {
 
             <div className="relative z-1 max-w-[37rem] ml-auto">
               <h4 className="h4 mb-4">About us</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
+              <p className="body-2 mb-[1rem] text-n-3">
                 At the heart of our company is Gus Paiva, a seasoned contractor
                 with a passion for transforming spaces since 2016. Starting in
                 Dallas, Texas, and now proudly serving the Greater Toronto Area
@@ -43,7 +45,7 @@ const AboutUs: React.FC = () => {
                 approach to every project.
               </p>
 
-              <p className="body-2 mb-[3rem] text-n-3">
+              <p className="body-2 mb-[1rem] text-n-3">
                 We believe that every client deserves respect for their time,
                 vision, and investment. That’s why our family-run company is
                 committed to understanding your unique needs and delivering
@@ -127,7 +129,7 @@ const AboutUs: React.FC = () => {
                   height={400}
                 />
 
-                <VideoChatMessage />
+                <VideoChatMessage image={person} />
                 <VideoBar />
               </div>
             </div>

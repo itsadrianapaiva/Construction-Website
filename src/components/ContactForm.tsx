@@ -106,8 +106,8 @@ const ContactForm: React.FC = () => {
         )}
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-1">
+      <div className="grid grid-cols-5 gap-4">
+        <div className="col-span-2">
           <div className="mb-4">
             <label htmlFor="city" className="block mb-2 font-semibold">
               City{" "}
@@ -130,7 +130,7 @@ const ContactForm: React.FC = () => {
         <div className="col-span-1">
           <div className="mb-4">
             <label htmlFor="province" className="block mb-2 font-semibold">
-              Province/Region{" "}
+              Province{" "}
             </label>
             <select
               id="province"
@@ -160,7 +160,7 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
 
-        <div className="col-span-1">
+        <div className="col-span-2">
           <div className="mb-4">
             <label htmlFor="postalCode" className="block mb-2 font-semibold">
               Postal Code{" "}
@@ -187,7 +187,7 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         <div className="col-span-1">
           <div className="mb-4">
             <label htmlFor="referral" className="block mb-2 font-semibold">
