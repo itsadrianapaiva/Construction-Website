@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import logo_temp from "../assets/logo_temp.png";
+import dreammakers from "../assets/hero/dreammakers.jpg";
 import { navigation } from "../constants/index.js";
 import Button from "./Button.tsx";
 import MenuSvg from "../assets/svg/MenuSvg.tsx";
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img className="object-cover scale-90 h-full w-full" src={logo_temp} width={120} height={10} alt="logo" />
+          <img className="object-scale-down w-90 h-[7rem] py-2" src={dreammakers} alt="logo" />
         </a>
 
         <nav
