@@ -132,12 +132,6 @@ export const navigation = [
     url: "#aboutus",
   },
   {
-    id: "4",
-    title: "+1 416 123 4567",
-    url: "#contactus",
-    onlyMobile: true,
-  },
-  {
     id: "5",
     title: "Get a Quote",
     url: "#getaquote",
