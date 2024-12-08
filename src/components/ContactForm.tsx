@@ -3,6 +3,7 @@ import Button from "./Button";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { FormProps } from "../types/components";
 import emailjs from "emailjs-com";
+import axios from "axios";
 
 const ContactForm: React.FC = () => {
   const {
@@ -13,50 +14,75 @@ const ContactForm: React.FC = () => {
   } = useForm<FormProps>();
 
   const onSubmit: SubmitHandler<FormProps> = async (data) => {
-    const fileList = data.image;
-
-    if (!fileList?.[0]) {
-      alert("Please upload a valid image.");
-      return;
-    }
-
-    const imageFile = fileList[0];
-    let base64Image = "";
-
-    if (imageFile) {
-      base64Image = await new Promise<string>((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result as string);
-        reader.onerror = (error) => reject(error);
-        reader.readAsDataURL(imageFile);
+    try {
+      const formData = new FormData();
+      Object.entries(data).forEach(([key, value]) => {
+        if (key === "files" && value instanceof FileList) {
+          Array.from(value).forEach((file) => formData.append("file", file));
+        } else {
+          formData.append(key, value as string);
+        }
       });
+
+      formData.append(
+        "upload_preset",
+        import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET
+      );
+
+      let cloudResponse: { data: { secure_url: string } } | null = null;
+
+      try {
+        cloudResponse = await axios.post(
+          `https://api.cloudinary.com/v1_1/${
+            import.meta.env.VITE_CLOUDINARY_CLOUD_NAME
+          }/auto/upload`,
+          formData,
+          {
+            headers: { "Content-Type": "multipart/form-data" },
+          }
+        );
+        console.log("Upload successful:", cloudResponse?.data);
+      } catch (error: unknown) {
+        if (axios.isAxiosError(error)) {
+          console.error(
+            "Error submitting form:",
+            error.response?.data || error.message
+          );
+        } else {
+          console.error("Unknown error:", error);
+        }
+        return;
+      }
+
+      const uploadedFiles = cloudResponse?.data?.secure_url;
+
+      if (!uploadedFiles) {
+        console.warn("No files were uploaded");
+        // Decide how you want to handle this - maybe skip file upload or show an error
+      }
+
+      const emailJsData = {
+        ...data,
+        uploadedFiles,
+      };
+
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        alert("Email service is not configured properly.");
+        console.error("Missing EmailJS environment variables.");
+        return;
+      }
+
+      await emailjs.send(serviceId, templateId, emailJsData, publicKey);
+      alert("Message sent successfully!");
+      reset();
+    } catch (error: unknown) {
+      console.error("Error submitting form:", error);
+      alert("Failed to submit the form. Please try again.");
     }
-
-    const formData = {
-      ...data,
-      image: base64Image, // Include the Base64 string in the payload
-    };
-
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      alert("Email service is not configured properly.");
-      console.error("Missing EmailJS environment variables.");
-      return;
-    }
-
-    emailjs
-      .send(serviceId, templateId, formData, publicKey)
-      .then(() => {
-        alert("Message sent successfully!");
-        reset();
-      })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        alert("Failed to send the message. Please try again later.");
-      });
   };
 
   return (
@@ -318,25 +344,14 @@ const ContactForm: React.FC = () => {
             Upload an Image
           </label>
           <p className="text-sm text-n-4 mb-2">
-            Please upload any pictures that would help us
-            provide you with the best service possible.
+            Please upload any pictures that would help us provide you with the
+            best service possible.
           </p>
           <input
-            id="image"
+            id="files"
             type="file"
-            accept="image/*"
-            {...register("image", {
-              validate: {
-                fileSize: (fileList) =>
-                  !fileList ||
-                  fileList[0]?.size <= 2 * 1024 * 1024 ||
-                  "File must be smaller than 2MB",
-                fileType: (fileList) =>
-                  !fileList ||
-                  /image\/(jpeg|png|gif)/.test(fileList[0]?.type) ||
-                  "File must be an image (JPEG, PNG, GIF)",
-              },
-            })}
+            multiple
+            {...register("files")}
             className="w-full border border-gray-300 p-2 rounded"
           />
           {errors.image && (
