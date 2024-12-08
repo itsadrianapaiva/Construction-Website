@@ -32,6 +32,7 @@ const Services: React.FC = () => {
                     src={item.iconUrl}
                     width={48}
                     height={48}
+                    loading="lazy"
                     alt={item.title}
                   />
                   {/* turn the p below into anchor */}
@@ -54,6 +55,7 @@ const Services: React.FC = () => {
                     width={380}
                     height={323}
                     alt={item.title}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                     />
                   )}

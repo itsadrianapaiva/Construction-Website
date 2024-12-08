@@ -28,6 +28,7 @@ const ContactUs: React.FC = () => {
                 width={730}
                 height={850}
                 alt="Living room"
+                loading="lazy"
               />
             </div>
 
@@ -45,7 +46,7 @@ const ContactUs: React.FC = () => {
                     key={index}
                     className="flex items-start py-4 border-t border-n-6"
                   >
-                    <img width={24} height={24} src={check} />
+                    <img width={24} height={24} src={check} loading="lazy" />
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
@@ -73,7 +74,7 @@ const ContactUs: React.FC = () => {
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[26rem]">
-                <h4 className="h4 mb-4 px-8 py-4">Or you can call us directly</h4>
+              <h4 className="h4 mb-4 px-8 py-4">Or you can call us directly</h4>
               <div className="flex flex-row flex-wrap justify-between items-center ml-4 pb-10 px-4 xl:px-8">
                 <div className="flex flex-col mb-8 lg:mb-0">
                   <p className="font-bold text-n-2 mb-1">Gus Paiva</p>
@@ -93,16 +94,19 @@ const ContactUs: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col mb-8 lg:mb-0">
-                  <p className="font-bold text-n-2 mb-1">Gus Paiva</p> 
+                  <p className="font-bold text-n-2 mb-1">Gus Paiva</p>
                   <div className="flex items-center justify-start">
-                  <img src={phone1} width={18} height={18} /> 
-                  <p className="text-n-3 pl-1">(437) 448-4788</p> 
+                    <img src={phone1} width={18} height={18} />
+                    <p className="text-n-3 pl-1">(437) 448-4788</p>
                   </div>
                   <div className="flex justify-start">
-                  <img src={mail1} width={18} height={18} />{" "}
-                  <a className="text-n-3 underline pl-1" href="mailto:Y6Y9o@example.com">
-                    gustavopaiva@outlook.com
-                  </a>
+                    <img src={mail1} width={18} height={18} />{" "}
+                    <a
+                      className="text-n-3 underline pl-1"
+                      href="mailto:Y6Y9o@example.com"
+                    >
+                      gustavopaiva@outlook.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -114,9 +118,10 @@ const ContactUs: React.FC = () => {
                   alt="Toronto"
                   width={520}
                   height={400}
+                  loading="lazy"
                 />
 
-                <VideoChatMessage message="We serve the Greater Toronto Area!"/>
+                <VideoChatMessage message="We serve the Great Toronto Area!" />
               </div>
             </div>
           </div>

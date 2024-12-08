@@ -13,7 +13,6 @@ import {
 } from "./design/Services";
 import person from "../assets/about/person.svg";
 
-
 const AboutUs: React.FC = () => {
   return (
     <Section id="aboutus" crosses>
@@ -31,6 +30,7 @@ const AboutUs: React.FC = () => {
                 width={800}
                 height={730}
                 alt="family"
+                loading="lazy"
                 src={housefam}
               />
             </div>
@@ -76,13 +76,16 @@ const AboutUs: React.FC = () => {
                   width={630}
                   height={750}
                   alt="kitchen"
+                  loading="lazy"
                 />
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Trustworthy expertise</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                Your peace of mind is our priority. With years of proven experience and a family-driven approach, we deliver quality you can trust in every detail of your project.
+                  Your peace of mind is our priority. With years of proven
+                  experience and a family-driven approach, we deliver quality
+                  you can trust in every detail of your project.
                 </p>
               </div>
 
@@ -93,7 +96,9 @@ const AboutUs: React.FC = () => {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Clear communication</h4>
                 <p className="body-2 mb-[1.8rem] text-n-3">
-                We keep you informed at every step, ensuring transparency and a shared vision from the initial consultation to project completion.
+                  We keep you informed at every step, ensuring transparency and
+                  a shared vision from the initial consultation to project
+                  completion.
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -113,7 +118,13 @@ const AboutUs: React.FC = () => {
                             : ""
                         }
                       >
-                        <img src={item} width={24} height={24} alt={item} />
+                        <img
+                          src={item}
+                          width={24}
+                          height={24}
+                          alt={item}
+                          loading="lazy"
+                        />
                       </div>
                     </li>
                   ))}
@@ -127,6 +138,7 @@ const AboutUs: React.FC = () => {
                   alt="House"
                   width={520}
                   height={400}
+                  loading="lazy"
                 />
 
                 <VideoChatMessage image={person} />

@@ -18,7 +18,7 @@ const Process: React.FC = () => {
             {processContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
-                  <img src={check} width={24} height={24} alt="check" />
+                  <img src={check} width={24} height={24} alt="check" loading="lazy" />
                   <h6 className="body-2 mx-5">{item.title}</h6>
                 </div>
                 {item.text && (
@@ -45,6 +45,7 @@ const Process: React.FC = () => {
                     width={100}
                     height={100}
                     alt="logo"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -65,6 +66,7 @@ const Process: React.FC = () => {
                       height={app.height}
                       alt={app.title}
                       src={app.icon}
+                      loading="lazy"
                     />
                   </div>
                 </li>

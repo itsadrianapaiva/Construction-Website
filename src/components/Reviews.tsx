@@ -9,7 +9,10 @@ const Reviews: React.FC = () => {
   return (
     <Section className="overflow-hidden" id="reviews">
       <div className="container md:pb-10">
-        <Heading tag="What our clients say" title="Hear from homeowners who trusted us " />
+        <Heading
+          tag="What our clients say"
+          title="Hear from homeowners who trusted us "
+        />
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
           {testimonies.map((item) => {
@@ -28,6 +31,7 @@ const Reviews: React.FC = () => {
                     <img
                       src={grid}
                       className="w-full"
+                      loading="lazy"
                       width={550}
                       height={550}
                       alt="Grid"
@@ -42,6 +46,7 @@ const Reviews: React.FC = () => {
                         <img
                           className="mr-2.5"
                           src={item.status === "done" ? check2 : loading1}
+                          loading="lazy"
                           width={16}
                           height={16}
                           alt={status}
@@ -54,13 +59,16 @@ const Reviews: React.FC = () => {
                       <img
                         src={item.imageUrl}
                         className="w-full h-[320px] object-cover object-center"
+                        loading="lazy"
                         alt={item.title}
                       />
                     </div>
 
                     <h4 className="h4 mb-4">{item.title}</h4>
                     <p className="body-2 text-n-4 mb-5">{item.text}</p>
-                    <p className="ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider cursor-pointer text-right">{item.author}</p>
+                    <p className="ml-auto font-code text-sm font-bold text-n-1 uppercase tracking-wider cursor-pointer text-right">
+                      {item.author}
+                    </p>
                   </div>
                 </div>
               </div>
