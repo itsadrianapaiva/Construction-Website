@@ -16,6 +16,8 @@ const ContactForm: React.FC = () => {
   const onSubmit: SubmitHandler<FormProps> = async (data) => {
     try {
       const formData = new FormData();
+      let uploadedUrls: string[] = [];
+
       Object.entries(data).forEach(([key, value]) => {
         if (key === "files" && value instanceof FileList) {
           Array.from(value).forEach((file) => formData.append("file", file));
@@ -29,41 +31,45 @@ const ContactForm: React.FC = () => {
         import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET
       );
 
-      let cloudResponse: { data: { secure_url: string } } | null = null;
-
       try {
-        cloudResponse = await axios.post(
-          `https://api.cloudinary.com/v1_1/${
-            import.meta.env.VITE_CLOUDINARY_CLOUD_NAME
-          }/auto/upload`,
-          formData,
-          {
-            headers: { "Content-Type": "multipart/form-data" },
-          }
-        );
-        console.log("Upload successful:", cloudResponse?.data);
-      } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-          console.error(
-            "Error submitting form:",
-            error.response?.data || error.message
+        const uploadPromises = Array.from(data.files as FileList).map(async (file) => {
+          const singleFileFormData = new FormData();
+          singleFileFormData.append("file", file);
+          singleFileFormData.append(
+            "upload_preset",
+            import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET
           );
-        } else {
-          console.error("Unknown error:", error);
-        }
-        return;
-      }
 
-      const uploadedFiles = cloudResponse?.data?.secure_url;
+          const cloudResponse = await axios.post(
+            `https://api.cloudinary.com/v1_1/${
+              import.meta.env.VITE_CLOUDINARY_CLOUD_NAME
+            }/auto/upload`,
+            singleFileFormData,
+            {
+              headers: { "Content-Type": "multipart/form-data" },
+            }
+          );
 
-      if (!uploadedFiles) {
-        console.warn("No files were uploaded");
-        // Decide how you want to handle this - maybe skip file upload or show an error
+          return cloudResponse.data.secure_url;
+      });
+
+      uploadedUrls = await Promise.all(uploadPromises);
+      console.log("All uploads successful:", uploadedUrls);
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        console.error(
+          "Error uploading files:",
+          error.response?.data || error.message
+        );
+      } else {
+        console.error("Unknown error:", error);
       }
+      return;
+    }
 
       const emailJsData = {
         ...data,
-        uploadedFiles,
+        uploadedFiles: uploadedUrls,
       };
 
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -79,6 +85,7 @@ const ContactForm: React.FC = () => {
       await emailjs.send(serviceId, templateId, emailJsData, publicKey);
       alert("Message sent successfully!");
       reset();
+
     } catch (error: unknown) {
       console.error("Error submitting form:", error);
       alert("Failed to submit the form. Please try again.");
