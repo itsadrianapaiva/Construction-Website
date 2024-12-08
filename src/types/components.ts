@@ -45,4 +45,5 @@ export interface HeadingProps {
     projectType: string;
     projectDescription: string;
     [key: string]: unknown;
+    image?: FileList; // FileList type for the uploaded image
   }

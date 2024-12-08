@@ -75,7 +75,7 @@ const ContactUs: React.FC = () => {
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[26rem]">
                 <h4 className="h4 mb-4 px-8 py-4">Or you can call us directly</h4>
               <div className="flex flex-row flex-wrap justify-between items-center ml-4 pb-10 px-4 xl:px-8">
-                <div className="flex flex-col mb-8 md:mb-0 lg:mb-0">
+                <div className="flex flex-col mb-8 lg:mb-0">
                   <p className="font-bold text-n-2 mb-1">Gus Paiva</p>
                   <div className="flex items-center justify-start">
                     <img src={phone1} width={18} height={18} />
