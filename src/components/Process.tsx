@@ -28,7 +28,7 @@ const Process: React.FC = () => {
             ))}
           </ul>
 
-          <Button>Call us now</Button>
+          <Button href={"#contactUs"}>Call us now</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[48rem] mt-4">
