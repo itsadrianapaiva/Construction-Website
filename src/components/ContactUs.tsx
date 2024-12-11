@@ -121,7 +121,7 @@ const ContactUs: React.FC = () => {
                   loading="lazy"
                 />
 
-                <VideoChatMessage message="We serve the Great Toronto Area!" />
+                <VideoChatMessage message="We serve the Greater Toronto Area!" />
               </div>
             </div>
           </div>
