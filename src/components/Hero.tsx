@@ -32,9 +32,14 @@ const Hero: React.FC = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           Remodeling your home with us is fast, easy, and more affordable than you might think.
           </p>
-          <Button href="#process" white>
+
+          <Button href="#process">
+            Our Portfolio
+          </Button>
+          <Button className="ml-5" href="#process" white>
             Get Started
           </Button>
+          
         </div>
         <div className="relative max-w-[30rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">

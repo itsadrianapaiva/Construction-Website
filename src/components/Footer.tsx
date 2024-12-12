@@ -1,24 +1,24 @@
 import { aboutUsFooter, services, socials } from "../constants";
 import Section from "./Section";
-import dreammakers from "../assets/hero/dreammakers.jpg";
 import Button from "./Button";
 import arrowup from "../assets/arrowup.svg";
 import locationpin from "../assets/locationpin.svg";
 import telephoneicon from "../assets/telephoneicon.svg";
 import mailicon from "../assets/mailicon.svg";
+import logo3 from "../assets/logo3.png";
 
 const Footer: React.FC = () => {
   return (
     <>
       <Section crosses className="!px-0 !py-20">
-        <footer className="container grid grid-cols-4 gap-20 max-sm:grid-cols-1">
+        <footer className="container grid grid-cols-4 gap-20 max-sm:grid-cols-1 max-sm:grid-rows-2">
           <img
-            className="object-scale-down w-50 h-[25rem] self-start col-span-1"
-            src={dreammakers}
+            className="object-scale-down w-50 mx-20 lg:mx-0 lg:h-[25rem] col-span-1"
+            src={logo3}
             alt="logo"
           />
 
-          <div className="flex flex-row gap-20 my-auto col-span-3 row-span-1 items-start justify-around">
+          <div className="flex flex-row flex-wrap gap-20 my-auto col-span-3 items-start justify-around">
             <div className="flex flex-col gap-5">
               <h5 className="h5">Services</h5>
               <ul className="flex flex-col place-content-center gap-4">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                     key={item.id}
                     href={item.url}
                     target="_blank"
-                    className="flex items-center justify-center w-10 h-10 bg-n-7 hover:text-n-4"
+                    className="flex items-center justify-center w-10 h-10 ml-6  bg-n-7 hover:text-n-4"
                   >
                     <img
                       src={item.iconUrl}
@@ -93,6 +93,7 @@ const Footer: React.FC = () => {
           </div>
         </footer>
       </Section>
+
       <Section crosses className="!px-0 !py-10">
         <div className="container flex flex-col sm:justify-between justify-around items-start max-sm:flex-col">
           <div className="flex flex-row justify-between w-full">
@@ -103,9 +104,8 @@ const Footer: React.FC = () => {
             </p>
 
             <div className="flex items-center gap-3">
-              <p className="uppercase text-n-4 font-code">Back at top</p>
+              <p className="uppercase text-n-4 font-code hidden md:block">Back at top</p>
               <Button
-                className=""
                 onClick={() => window.scrollTo(0, 0)}
                 children={
                   <img
@@ -119,13 +119,13 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <p className="caption text-n-4 lg:block">
+            <p className="caption text-n-4 md:-mt-3 lg:block">
               Contractor Website Designed by Adriana Paiva
             </p>
           </div>
         </div>
 
-        <div className="flex justify-space-between ml-[13rem] mt-5 gap-3">
+        <div className="flex justify-space-between ml-10 lg:ml-[13rem] mt-5 gap-3">
           <a className="caption font-extralight text-n-4 lg:block" href="/privacy-policy">
             Privacy
           </a>

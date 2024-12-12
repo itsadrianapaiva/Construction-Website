@@ -1,11 +1,11 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import dreammakers from "../assets/hero/dreammakers.jpg";
 import { navigation } from "../constants/index.js";
 import Button from "./Button.tsx";
 import MenuSvg from "../assets/svg/MenuSvg.tsx";
 import { HamburgerMenu } from "./design/Header.tsx";
 import { useState } from "react";
+import teste2 from "../assets/teste2.png";
 
 const Header: React.FC = () => {
   const pathname = useLocation();
@@ -35,8 +35,12 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img className="object-scale-down w-90 h-[7rem] py-2" src={dreammakers} alt="logo" />
+        <a className="block md:mx-auto w-[25rem] lg:w-[20rem] xl:mr-100" href="#hero">
+          <img
+            className="object-scale-down scale-150 lg:object-cover w-[18rem] h-[6rem] lg:h-[8rem] py-3 md:px-5 md:-ml-20"
+            src={teste2}
+            alt="logo"
+          />
         </a>
 
         <nav
@@ -66,7 +70,11 @@ const Header: React.FC = () => {
           <HamburgerMenu />
         </nav>
 
-        <Button className="hidden lg:flex" href="#contactUs" children="Get a Quote" />
+        <Button
+          className="hidden lg:flex"
+          href="#contactUs"
+          children="Get a Quote"
+        />
 
         <Button
           className="ml-auto lg:hidden"
