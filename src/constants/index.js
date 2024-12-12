@@ -121,11 +121,11 @@ export const navigation = [
     title: "Portfolio",
     url: "#portfolio",
   },
-  {
-    id: "2",
-    title: "Pricing",
-    url: "#pricing",
-  },
+  // {
+  //   id: "2",
+  //   title: "Pricing",
+  //   url: "#pricing",
+  // },
   {
     id: "3",
     title: "About us",

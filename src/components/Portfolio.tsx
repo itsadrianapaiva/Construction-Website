@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { portfolio } from "../constants";
-import { GradientLight } from "./design/Benefits";
+import { GradientLight } from "./design/Gradient";
 import { useState } from "react";
 import Button from "./Button";
 
