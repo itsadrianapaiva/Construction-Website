@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import "./index.css";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.tsx";
 import TermsOfService from "./Pages/TermsOfService.tsx";
+import Sitemap from "./Pages/Sitemap.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/sitemap" element={<Sitemap />} />
       </Routes>
     </Router>
   </StrictMode>

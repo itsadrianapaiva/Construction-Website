@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
           <a className="caption font-extralight text-n-4 lg:block" href="/terms-of-service">
             Terms
           </a>
-          <a className="caption font-extralight text-n-4 lg:block" href="">
+          <a className="caption font-extralight text-n-4 lg:block" href="/sitemap">
             Sitemap
           </a>
         </div>
