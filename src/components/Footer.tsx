@@ -11,14 +11,14 @@ const Footer: React.FC = () => {
   return (
     <>
       <Section crosses className="!px-0 !py-20">
-        <footer className="container grid grid-cols-4 gap-20 max-sm:grid-cols-1 max-sm:grid-rows-2">
+        <footer className="container grid grid-cols-4 gap-20 max-sm:grid-cols-1">
           <img
-            className="object-scale-down w-50 mx-20 lg:mx-0 lg:h-[25rem] col-span-1"
+            className="object-scale-down w-50 mx-20 sm:mx-0 lg:h-[25rem] col-span-1"
             src={logo3}
             alt="logo"
           />
 
-          <div className="flex flex-row flex-wrap gap-20 my-auto col-span-3 items-start justify-around">
+          <div className="flex flex-row flex-wrap gap-10 md:gap-18 my-auto col-span-3 items-start justify-start ml-4">
             <div className="flex flex-col gap-5">
               <h5 className="h5">Services</h5>
               <ul className="flex flex-col place-content-center gap-4">
@@ -70,31 +70,52 @@ const Footer: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col flex-wrap place-content-center gap-5">
+            <div className="flex flex-col gap-5">
               <h5 className="h5">Get in touch</h5>
               <div className="flex items-center">
-                <img className="filter invert"src={locationpin} width={18} height={18} />
+                <img
+                  className="filter invert"
+                  src={locationpin}
+                  width={18}
+                  height={18}
+                />
                 <p className="body-2 text-n-3 pl-3">Toronto, ON - Canada</p>
               </div>
               <div className="flex items-center">
-                <img className="filter invert" src={telephoneicon} width={18} height={18} />
+                <img
+                  className="filter invert"
+                  src={telephoneicon}
+                  width={18}
+                  height={18}
+                />
                 <p className="body-2 text-n-3 pl-3">(437) 448-4877</p>
               </div>
-              <div className="flex items-center">
-                <img src={mailicon} width={18} height={18} />
-                <a
-                  href="mailto:ZTtY0@example.com"
-                  className="body-2 text-n-3 pl-3 hover:text-n-4"
-                >
-                  gustavopaiva@outlook.com
-                </a>
+              <div className="flex flex-col gap-3 item-center">
+                <div className="flex flex-row item-center">
+                  <img src={mailicon} width={18} height={18} />
+                  <a
+                    href="mailto:gustavopaiva@dreammakers.com"
+                    className="body-2 text-n-3 pl-3 hover:text-n-4"
+                  >
+                    gustavopaiva@dreammakers.com
+                  </a>
+                </div>
+                <div className="flex flex-row item-center">
+                  <img src={mailicon} width={18} height={18} />
+                  <a
+                    href="mailto:paulogomes@dreammakers.com"
+                    className="body-2 text-n-3 pl-3 hover:text-n-4"
+                  >
+                    paulogomes@dreammakers.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </footer>
       </Section>
 
-      <Section crosses className="!px-0 !py-10">
+      <Section crosses className="!px-0 !py-10 border-t border-n-1/10">
         <div className="container flex flex-col sm:justify-between justify-around items-start max-sm:flex-col">
           <div className="flex flex-row justify-between w-full">
             <p className="caption text-n-4 items-center lg:block">
@@ -104,7 +125,9 @@ const Footer: React.FC = () => {
             </p>
 
             <div className="flex items-center gap-3">
-              <p className="uppercase text-n-4 font-code hidden md:block">Back at top</p>
+              <p className="uppercase text-n-4 font-code hidden md:block">
+                Back at top
+              </p>
               <Button
                 onClick={() => window.scrollTo(0, 0)}
                 children={
@@ -126,13 +149,22 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="flex justify-space-between ml-10 lg:ml-[13rem] mt-5 gap-3">
-          <a className="caption font-extralight text-n-4 lg:block" href="/privacy-policy">
+          <a
+            className="caption font-extralight text-n-4 lg:block"
+            href="/privacy-policy"
+          >
             Privacy
           </a>
-          <a className="caption font-extralight text-n-4 lg:block" href="/terms-of-service">
+          <a
+            className="caption font-extralight text-n-4 lg:block"
+            href="/terms-of-service"
+          >
             Terms
           </a>
-          <a className="caption font-extralight text-n-4 lg:block" href="/sitemap">
+          <a
+            className="caption font-extralight text-n-4 lg:block"
+            href="/sitemap"
+          >
             Sitemap
           </a>
         </div>

@@ -24,13 +24,13 @@ const Hero: React.FC = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
-          Effortlessly Beautiful Home Remodeling &nbsp;With&nbsp; {' '}
+          Turn your dream project into reality &nbsp;with&nbsp; {' '}
             <span className="inline-block relative">
-            Us{" "}
+            us{" "}
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-          Remodeling your home with us is fast, easy, and more affordable than you might think.
+          <p className="body-1 max-w-4xl mx-auto mb-6 text-n-2 lg:mb-8">
+          Building more than just homes. We create spaces that inspire joy and comfort.
           </p>
 
           <Button href="#process">

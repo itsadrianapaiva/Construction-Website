@@ -1,4 +1,4 @@
-import housefam from "../assets/housefam.jpg";
+import workinghands from "../assets/workinghands.jpg";
 import kitchen from "../assets/kitchen.jpg";
 import remodel1 from "../assets/remodel1.jpg";
 import { aboutUsIcons } from "../constants";
@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
     <Section id="aboutus" crosses>
       <div className="container">
         <Heading
-          title="Home Remodeling Designs by Gus Paiva"
+          title="Home Remodeling Designs by Experts"
           text="Building trust through quality and dedication, one home at a time."
         />
 
@@ -29,9 +29,9 @@ const AboutUs: React.FC = () => {
                 className="w-full h-full object-cover md:object-right md:opacity-30 opacity-30 xl:opacity-100"
                 width={800}
                 height={730}
-                alt="family"
+                alt="working hands"
                 loading="lazy"
-                src={housefam}
+                src={workinghands}
               />
             </div>
 

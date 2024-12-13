@@ -1,10 +1,10 @@
 import * as fs from "fs";
 import * as path from "path";
 
-// Define your site's base URL
-const SITE_URL = "https://www.dreammakersconstruction.ca"; // Replace with your actual domain
 
-// Define routes based on your main.tsx
+const SITE_URL = "https://www.dreammakersconstruction.ca"; 
+
+
 const routes = [
   {
     path: "/",
@@ -28,7 +28,7 @@ const routes = [
   },
 ];
 
-// Generate Sitemap Function
+
 function generateSitemap() {
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -46,22 +46,22 @@ function generateSitemap() {
     .join("")}
 </urlset>`;
 
-  // Ensure public directory exists
+  
   const publicDir = path.resolve("./public");
 
-  // Create public directory if it doesn't exist
+ 
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir);
   }
 
-  // Write sitemap to public directory
+ 
   fs.writeFileSync(path.resolve(publicDir, "sitemap.xml"), sitemapXml);
 
   console.log("Sitemap generated successfully!");
   console.log(`Sitemap saved to: ${path.resolve(publicDir, "sitemap.xml")}`);
 }
 
-// Run the generation
+
 generateSitemap();
 
 export default generateSitemap;
