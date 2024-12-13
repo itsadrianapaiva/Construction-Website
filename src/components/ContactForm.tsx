@@ -49,6 +49,7 @@ const ContactForm: React.FC = () => {
               headers: { "Content-Type": "multipart/form-data" },
             }
           );
+          console.log(process.env.CLOUD_NAME); 
 
           return cloudResponse.data.secure_url;
       });
