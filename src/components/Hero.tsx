@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           Building more than just homes. We create spaces that inspire joy and comfort.
           </p>
 
-          <Button href="#process">
+          <Button href="#portfolio">
             Our Portfolio
           </Button>
           <Button className="ml-5" href="#process" white>
