@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
             </div>
             <Gradient />
           </div>
-          <div className="absolute -top-[140%] left-1/2 w-[234%] h-[208%] -translate-x-1/2 md:h[218%] md:-top-[134%] md:translate-y-[15%] md:w-[221.5%] lg:-top-[130%] lg:scale-130">
+          <div className="absolute -top-[150%] left-1/2 w-[234%] h-[208%] -translate-x-1/2 md:h[218%] md:-top-[134%] md:translate-y-[15%] md:w-[221.5%] lg:-top-[130%] lg:scale-130">
             <img
               src={big_house}
               className="w-full h-full object-cover opacity-20"

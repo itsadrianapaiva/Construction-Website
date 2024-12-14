@@ -54,7 +54,7 @@ const AboutUs: React.FC = () => {
                 and remodeling journey seamless and rewarding.
               </p>
 
-              <p className="body-2 mb-[3rem] text-n-3">
+              <p className="body-2 mb-[4rem] text-n-3">
                 Your dream project is our priority, and we’re honored to bring
                 it to life with care and dedication.
               </p>
