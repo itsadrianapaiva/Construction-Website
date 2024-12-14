@@ -14,9 +14,9 @@ const Portfolio: React.FC = () => {
 
   return (
     <Section id="portfolio">
-      <div className="container relative z-2 text-center">
+      <div className="container relative z-2 md:text-center">
         <Heading
-          className="md:max-w-md lg:max-w-4xl"
+          className="max-w-xl lg:max-w-4xl"
           title="Trusted by Homeowners from Coast to Coast"
           text="Explore our portfolio to see the craftsmanship and dedication we bring to every project. From stunning remodels to innovative custom builds, our work reflects the trust and satisfaction of homeowners across North America. Each project is a testament to our commitment to quality, attention to detail, and our clients's visions."
         />

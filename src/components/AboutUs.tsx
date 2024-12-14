@@ -37,15 +37,15 @@ const AboutUs: React.FC = () => {
 
             <div className="relative z-1 max-w-[37rem] ml-auto">
               <h4 className="h4 mb-4">About us</h4>
-              <p className="body-2 mb-[1rem] text-n-3">
-                At the heart of our company is Gus Paiva, a seasoned contractor
+              <p className="body-2 mb-[0.5rem] text-n-3">
+                At the heart of our company is Gus Paiva and Paulo Gomes, two seasoned contractors
                 with a passion for transforming spaces since 2016. Starting in
                 Dallas, Texas, and now proudly serving the Greater Toronto Area
-                (GTA), Gus brings a wealth of experience and a family-driven
+                (GTA), they bring a wealth of experience and a family-driven
                 approach to every project.
               </p>
 
-              <p className="body-2 mb-[1rem] text-n-3">
+              <p className="body-2 mb-[0.5rem] text-n-3">
                 We believe that every client deserves respect for their time,
                 vision, and investment. That’s why our family-run company is
                 committed to understanding your unique needs and delivering

@@ -24,10 +24,7 @@ const Hero: React.FC = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6 animate-fade-slide">
-          Turn your dream project into reality &nbsp;with&nbsp; {' '}
-            <span className="inline-block relative">
-            us{" "}
-            </span>
+          Turn your dream project into reality &nbsp;with&nbsp; us
           </h1>
           <p className="body-1 max-w-4xl mx-auto mb-6 text-n-2 lg:mb-8 animate-fade-slide">
           Building more than just homes. We create spaces that inspire joy and comfort.
@@ -75,7 +72,7 @@ const Hero: React.FC = () => {
             </div>
             <Gradient />
           </div>
-          <div className="absolute -top-[130%] left-1/2 w-[234%] h-[208%] -translate-x-1/2 md:h[218%] md:-top-[134%] md:translate-y-[15%] md:w-[221.5%] lg:-top-[130%] lg:scale-130">
+          <div className="absolute -top-[140%] left-1/2 w-[234%] h-[208%] -translate-x-1/2 md:h[218%] md:-top-[134%] md:translate-y-[15%] md:w-[221.5%] lg:-top-[130%] lg:scale-130">
             <img
               src={big_house}
               className="w-full h-full object-cover opacity-20"
