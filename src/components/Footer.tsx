@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-space-between ml-10 lg:ml-[13rem] mt-5 gap-3">
+        <div className="flex justify-space-between ml-10 xl:ml-[13rem] mt-5 gap-3">
           <a
             className="caption font-extralight text-n-4 lg:block"
             href="/privacy-policy"
