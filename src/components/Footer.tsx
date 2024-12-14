@@ -147,19 +147,21 @@ const Footer: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex w-full justify-center lg:w-[88%] lg:justify-end flex-wrap mt-5 gap-5">
+        <div className="flex w-full justify-center flex-wrap mt-5 gap-15">
           <a
             className="caption font-extralight text-n-4 lg:block"
             href="/privacy-policy"
           >
             Privacy
           </a>
+          <p className="caption text-n-4 font-extralight">|</p>
           <a
             className="caption font-extralight text-n-4 lg:block"
             href="/terms-of-service"
           >
             Terms
           </a>
+          <p className="caption text-n-4 font-extralight">|</p>
           <a
             className="caption font-extralight text-n-4 lg:block"
             href="/sitemap"
