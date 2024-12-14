@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block md:mx-auto w-[25rem] lg:w-[20rem] xl:mr-100" href="#hero">
           <img
-            className="object-scale-down scale-150 lg:object-cover w-[18rem] h-[6rem] lg:h-[8rem] py-3 md:px-5 md:-ml-20"
+            className="object-scale-down scale-150 lg:object-cover w-[18rem] h-[6rem] lg:h-[8rem] py-3 md:px-5 md:-ml-20 animate-fade-in"
             src={teste2}
             alt="logo"
           />
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             openNavigation ? "flex" : "hidden"
           } fixed top-[5rem] left-0 right-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row animate-fade-in">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         </nav>
 
         <Button
-          className="hidden lg:flex"
+          className="hidden lg:flex animate-fade-in"
           href="#contactUs"
           children="Get a Quote"
         />

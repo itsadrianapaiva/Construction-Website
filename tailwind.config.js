@@ -81,6 +81,52 @@ export default {
         "benefit-card-5": "url(assets/benefits/card-5.svg)",
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
+      animation: {
+        'fade-slide': 'fade-slide-down 1s ease-out',
+        'fade-in-left': 'fade-in-left 1s ease-out',
+        'zoom-in': 'zoom-in 1s ease-out',
+        'fade-in': 'fade-in 1s ease-out',
+      },
+      keyframes: {
+        'fade-slide-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        'fade-in-left': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        'zoom-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'scale(0.8)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'scale(1)',
+          },
+        },
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
+      },
     },
   },
   plugins: [

@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             alt="logo"
           />
 
-          <div className="flex flex-row flex-wrap gap-10 md:gap-18 my-auto col-span-3 items-start justify-start ml-4">
+          <div className="flex flex-row flex-wrap gap-10 sm:gap-18 my-auto col-span-3 items-start justify-start ml-4">
             <div className="flex flex-col gap-5">
               <h5 className="h5">Services</h5>
               <ul className="flex flex-col place-content-center gap-4">
