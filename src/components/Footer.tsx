@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
                 onClick={() => window.scrollTo(0, 0)}
                 children={
                   <img
-                    className="w-7 object-cover filter invert"
+                    className="w-9 object-cover filter invert"
                     src={arrowup}
                     alt="arrow"
                   />

@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <Section id="portfolio">
-      <div className="container relative z-2 md:text-center">
+      <div className="container relative z-2 text-center">
         <Heading
           className="max-w-xl lg:max-w-4xl"
           title="Trusted by Homeowners from Coast to Coast"
