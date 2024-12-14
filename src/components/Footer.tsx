@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
                 onClick={() => window.scrollTo(0, 0)}
                 children={
                   <img
-                    className="w-6 object-cover filter invert"
+                    className="w-7 object-cover filter invert"
                     src={arrowup}
                     alt="arrow"
                   />
@@ -147,8 +147,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
         </div>
-
-        <div className="flex justify-space-between ml-10 xl:ml-[13rem] mt-5 gap-3">
+        <div className="flex w-full justify-center lg:w-[88%] lg:justify-end flex-wrap mt-5 gap-5">
           <a
             className="caption font-extralight text-n-4 lg:block"
             href="/privacy-policy"
@@ -169,6 +168,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
       </Section>
+      
     </>
   );
 };
