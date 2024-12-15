@@ -15,6 +15,7 @@ const ContactUs: React.FC = () => {
     <Section id="contactUs" crosses>
       <div className="container">
         <Heading
+          className="text-center"
           title="Contact us today"
           text="We would love to hear more about your project and how we can turn your vision into a reality."
         />

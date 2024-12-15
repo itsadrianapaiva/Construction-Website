@@ -10,6 +10,7 @@ const Reviews: React.FC = () => {
     <Section className="overflow-hidden" id="reviews">
       <div className="container md:pb-10">
         <Heading
+          className="text-center"
           tag="What our clients say"
           title="Hear from homeowners who trusted us "
         />
