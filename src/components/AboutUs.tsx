@@ -1,10 +1,11 @@
-import workinghands from "../assets/workinghands.jpg";
+
 import kitchen from "../assets/kitchen.jpg";
 import remodel1 from "../assets/remodel1.jpg";
 import { aboutUsIcons } from "../constants";
 import Generating from "./Generating";
 import Heading from "./Heading";
 import Section from "./Section";
+import guspaulo from "../assets/guspaulo.jpg";
 import {
   PhotoChatMessage,
   Gradient,
@@ -30,33 +31,35 @@ const AboutUs: React.FC = () => {
                 className="w-full h-full object-cover md:object-right md:opacity-30 opacity-30 xl:opacity-100"
                 width={800}
                 height={730}
-                alt="working hands"
+                alt="gus paulo"
                 loading="lazy"
-                src={workinghands}
+                src={guspaulo}
               />
             </div>
 
             <div className="relative z-1 max-w-[37rem] ml-auto">
-              <h4 className="h4 mb-4">About us</h4>
+              <h4 className="h4 mb-4">From Our Family to Yours!</h4>
               <p className="body-2 mb-[0.5rem] text-n-3">
-                At the heart of our company is Gus Paiva and Paulo Gomes, two
-                seasoned contractors with a passion for transforming spaces
-                since 2016. Starting in Dallas, Texas, and now proudly serving
-                the Greater Toronto Area (GTA), they bring a wealth of
-                experience and a family-driven approach to every project.
+              Gustavo Paiva and Paulo Gomes, two childhood friends that got reunited
+             again in Canada after a few years founded Dream Makers with the purpose 
+             of bringing quality, reliability, professionalism and craftsmanship in 
+             a unique way to our clients. 
               </p>
 
               <p className="body-2 mb-[0.5rem] text-n-3">
-                We believe that every client deserves respect for their time,
-                vision, and investment. That’s why our family-run company is
-                committed to understanding your unique needs and delivering
-                exceptional results. With a focus on integrity, craftsmanship,
-                and personalized service, we’re here to make your construction
-                and remodeling journey seamless and rewarding.
+              Paulo is a tradesman of more than 7 years as a taper, delivering only 
+              the best quality work when it comes to drywall finishing.
+              Gustavo with more than 8 years in the construction industry, 
+              he started as a painter and rapidly engaged in the general contracting 
+              and constructionworld using his connections and project managing skills 
+              to help his customers with all residential renovation and construction needs.
               </p>
 
               <p className="body-2 mb-[4rem] text-n-3">
-                Your dream project is our priority, and we’re honored to bring
+              Together, they decided to unite their backgrounds and experiences with 
+              an idea of transforming ideas into reality, making dreams come true 
+              nd delivering great effortless service to our clients homes.
+              Your dream project is our priority, and we’re honored to bring
                 it to life with care and dedication.
               </p>
             </div>
