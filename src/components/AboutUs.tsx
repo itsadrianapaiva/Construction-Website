@@ -25,7 +25,7 @@ const AboutUs: React.FC = () => {
         />
 
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[50rem] md:h-[45rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
+          <div className="relative z-1 flex items-center h-[55rem] md:h-[45rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
               <img
                 className="w-full h-full object-cover md:object-right md:opacity-30 opacity-30 xl:opacity-100"
@@ -37,7 +37,7 @@ const AboutUs: React.FC = () => {
               />
             </div>
 
-            <div className="relative z-1 max-w-[37rem] ml-auto mt-4">
+            <div className="relative z-1 max-w-[37rem] ml-auto my-[5rem] md:mt-4">
               <h4 className="h4 mb-5">From Our Family to Yours!</h4>
               <p className="body-2 mb-[1rem] text-n-3">
               Gustavo Paiva and Paulo Gomes, two childhood friends that got reunited
@@ -55,7 +55,7 @@ const AboutUs: React.FC = () => {
               to help his customers with all residential renovation and construction needs.
               </p>
 
-              <p className="body-2 mb-[3rem] text-n-3">
+              <p className="body-2 mb-[1rem] text-n-3">
               Together, they decided to unite their backgrounds and experiences with 
               an idea of transforming ideas into reality, making dreams come true 
               nd delivering great effortless service to our clients homes.
