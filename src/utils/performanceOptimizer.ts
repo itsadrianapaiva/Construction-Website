@@ -65,4 +65,5 @@ export const PerformanceOptimizer: React.FC = () => {
     }, []); 
 
     return null; 
+
 };

@@ -10,8 +10,8 @@ const Services: React.FC = () => {
     <Section id="services">
       <div className="container relative z-2">
         <Heading
-          className="md:max-w-md lg:max-w-2xl text-center"
-          title="Trusted by Homeowners from Coast to Coast"
+          className="md:max-w-md lg:max-w-5xl text-center"
+          title="Expert Construction Services Tailored to You"
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
