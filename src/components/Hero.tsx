@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
             <img
               src={big_house}
               className="w-full h-full object-cover opacity-20"
-              width={1400}
+              width={1200}
               height={1200}
               alt="house"
             />
