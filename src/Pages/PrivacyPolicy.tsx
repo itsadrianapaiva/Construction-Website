@@ -159,7 +159,7 @@ const PrivacyPolicy: React.FC = () => {
           <div className="bg-gray-600 p-4 rounded-lg">
             <h3 className="font-semibold mb-2">Privacy Officer</h3>
             <p>Dream Makers Renovation and Construction</p>
-            <p>Email: privacy@dreammakersconstruction.com</p>
+            <p>Email: privacy@dreammakersconstruction.ca</p>
             <p>Phone: (437) 448-4877</p>
             <p>Address: Toronto, CA</p>
           </div>

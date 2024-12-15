@@ -87,9 +87,9 @@ const ContactUs: React.FC = () => {
                     <img src={mail1} width={18} height={18} />{" "}
                     <a
                       className="text-n-3 underline pl-1"
-                      href="mailto:Ygustavopaiva@dreammakers.com"
+                      href="mailto:Ygustavo@dreammakersconstruction.ca"
                     >
-                      gustavopaiva@dreammakers.com
+                      gustavo@dreammakersconstruction.ca
                     </a>
                   </div>
                 </div>
@@ -98,15 +98,15 @@ const ContactUs: React.FC = () => {
                   <p className="font-bold text-n-2 mb-1">Paulo Gomes</p>
                   <div className="flex items-center justify-start">
                     <img src={phone1} width={18} height={18} />
-                    <p className="text-n-3 pl-1">(437) 448-4788</p>
+                    <p className="text-n-3 pl-1">(437) 286-1686</p>
                   </div>
                   <div className="flex justify-start">
                     <img src={mail1} width={18} height={18} />{" "}
                     <a
                       className="text-n-3 underline pl-1"
-                      href="mailto:paulogomes@dreammakers.com"
+                      href="mailto:paulo@dreammakersconstruction.ca"
                     >
-                      paulogomes@dreammakers.com
+                      paulo@dreammakersconstruction.ca
                     </a>
                   </div>
                 </div>

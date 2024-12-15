@@ -165,7 +165,7 @@ const TermsOfService: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">9. Contact Information</h2>
           <div className="bg-gray-700 p-4 rounded-lg">
             <h3 className="font-semibold mb-2">Dream Makers Renovation and Construction</h3>
-            <p>Email: legal@dreammakersconstruction.com</p>
+            <p>Email: legal@dreammakersconstruction.ca</p>
             <p>Phone: (437) 448-4877</p>
             <p>Address: Toronto, CA</p>
           </div>

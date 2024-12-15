@@ -94,19 +94,19 @@ const Footer: React.FC = () => {
                 <div className="flex flex-row item-center">
                   <img src={mailicon} width={18} height={18} />
                   <a
-                    href="mailto:gustavopaiva@dreammakers.com"
+                    href="mailto:gustavo@dreammakersconstruction.ca"
                     className="body-2 text-n-3 pl-3 hover:text-n-4"
                   >
-                    gustavopaiva@dreammakers.com
+                    gustavo@dreammakersconstruction.ca
                   </a>
                 </div>
                 <div className="flex flex-row item-center">
                   <img src={mailicon} width={18} height={18} />
                   <a
-                    href="mailto:paulogomes@dreammakers.com"
+                    href="mailto:paulo@dreammakersconstruction.ca"
                     className="body-2 text-n-3 pl-3 hover:text-n-4"
                   >
-                    paulogomes@dreammakers.com
+                    paulo@dreammakersconstruction.ca
                   </a>
                 </div>
               </div>
