@@ -6,10 +6,12 @@ import "./index.css";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.tsx";
 import TermsOfService from "./Pages/TermsOfService.tsx";
 import Sitemap from "./Pages/Sitemap.tsx";
+import { PerformanceOptimizer } from "./utils/performanceOptimizer"; // Updated import
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Router>
+      <PerformanceOptimizer /> {/* Add this component */}
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
