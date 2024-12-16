@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             openNavigation ? "flex" : "hidden"
           } fixed top-[7rem] left-0 right-0 h-full bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center mx-auto -mt-[10rem] lg:flex-row animate-fade-in">
+          <div className="relative z-2 flex flex-col items-center justify-center mx-auto -mt-[10rem] sm:mt-0 lg:flex-row animate-fade-in">
             {navigation.map((item) => (
               <a
                 key={item.id}
