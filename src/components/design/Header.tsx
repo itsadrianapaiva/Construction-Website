@@ -35,8 +35,8 @@ export const HamburgerMenu: React.FC = () => {
         <img
           className="w-full h-full object-cover"
           src={big_house}
-          width={688}
-          height={953}
+          width={488}
+          height={653}
           alt="House"
         />
       </div>
@@ -44,8 +44,6 @@ export const HamburgerMenu: React.FC = () => {
       <Rings />
 
       <SideLines />
-
-      <BackgroundCircles />
     </div>
   );
 };

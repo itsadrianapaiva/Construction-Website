@@ -1,5 +1,5 @@
 import { check } from "../assets";
-import processMainLogo from "../assets/process/processMainLogo.svg";
+import logo4 from "../assets/process/logo4.png";
 import { processIcons, processContent, processText } from "../constants";
 import Button from "./Button";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
@@ -28,24 +28,25 @@ const Process: React.FC = () => {
             ))}
           </ul>
 
-          <Button href={"#contactUs"}>Call us now</Button>
+          <Button className="mb-10" href={"#contactUs"}>Call us now</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[48rem] mt-4">
-          <p className="body-2 mb-8 ml-auto text-n-4 md:mb-16 lg:mb-32 lg:w-[40rem] lg:max-auto">
+          <p className="body-2 mb-8 ml-auto w-[25rem] text-n-4 md:mb-16 lg:mb-32 lg:w-[40rem] lg:max-auto">
             {processText}
           </p>
 
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
-                <div className="flex item-center justify-center w-full h-full bg-n-8 rounded-full">
+                <div className="flex item-center justify-center w-full h-full bg-n-11/80 rounded-full">
                   <img
-                    src={processMainLogo}
+                    src={logo4}
                     width={100}
                     height={100}
                     alt="logo"
                     loading="lazy"
+                    className="object-cover h-full w-full translate-y-2"
                   />
                 </div>
               </div>

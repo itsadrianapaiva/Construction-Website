@@ -54,7 +54,7 @@ const ContactUs: React.FC = () => {
               </ul>
             </div>
 
-            <div className="xl:max-w-[38rem] h-[65rem] flex flex-col xl:h-[72rem]">
+            <div className="xl:max-w-[40rem] h-[67rem] flex flex-col xl:h-[72rem]">
               <p className="body-2 text-n-3">
                 We want to know all about your project and how we can better
                 serve you.

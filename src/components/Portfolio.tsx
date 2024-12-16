@@ -21,13 +21,13 @@ const Portfolio: React.FC = () => {
           text="Explore our portfolio to see the craftsmanship and dedication we bring to every project. From stunning remodels to innovative custom builds, our work reflects the trust and satisfaction of homeowners across North America. Each project is a testament to our commitment to quality, attention to detail, and our clients's visions."
         />
 
-        <div className="flex flex-wrap gap-5 mb-10 items-center justify-center">
+        <div className="flex flex-wrap gap-8 md:gap-12 mb-10 items-center justify-center">
           {portfolio.slice(0, visibleItems).map((item, index) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] rounded-2xl bg-conic-gradient"
               key={index}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] min-w-[20rem] p-[2.4rem] pointer-events-none"></div>
+              <div className="relative z-2 flex flex-col min-h-[22rem] min-w-[27rem] p-[2.4rem] pointer-events-none"></div>
 
               {index === 3 && <GradientLight />}
 

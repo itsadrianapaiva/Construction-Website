@@ -134,7 +134,7 @@ export const navigation = [
   {
     id: "5",
     title: "Get a Quote",
-    url: "#getaquote",
+    url: "#contactUs",
     onlyMobile: true,
   },
 ];
