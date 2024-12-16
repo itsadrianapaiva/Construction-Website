@@ -1,14 +1,11 @@
-import brainwave from "./brainwave.svg";
+
 import check from "./check.svg";
-import brainwaveSymbol from "./brainwave-symbol.svg";
-import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading1.svg";
-import yourlogo from "./yourlogo.svg";
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -53,16 +50,6 @@ import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
-import card1Svg from "../assets/benefits/card-1.tsx";
-import card2Svg from "../assets/benefits/card-2.tsx";
-import card3Svg from "../assets/benefits/card-3.tsx";
-import card4Svg from "../assets/benefits/card-4.tsx";
-import card5Svg from "../assets/benefits/card-5.tsx";
-import card6Svg from "../assets/benefits/card-6.tsx";
-import benefitIcon1 from "./benefits/icon-1.svg";
-import benefitIcon2 from "./benefits/icon-2.svg";
-import benefitIcon3 from "./benefits/icon-3.svg";
-import benefitIcon4 from "./benefits/icon-4.svg";
 import benefitImage2 from "./benefits/image-2.png";
 
 import discordBlack from "./socials/discord.svg";
@@ -72,17 +59,13 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  brainwave,
   check,
   check2,
   loading1,
-  brainwaveSymbol,
-  brainwaveWhiteSymbol,
   play,
   gradient,
   smallSphere,
   grid,
-  yourlogo,
   homeSmile,
   file02,
   searchMd,
@@ -121,20 +104,9 @@ export {
   notification2,
   notification3,
   notification4,
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
   discordBlack,
   facebook,
   instagram,
   telegram,
   twitter,
-  card1Svg,
-  card2Svg,
-  card3Svg,
-  card4Svg,
-  card5Svg,
-  card6Svg,
 };

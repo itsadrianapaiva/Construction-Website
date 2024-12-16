@@ -181,8 +181,8 @@ export const testimonies = [
     title: "Exceptional Craftsmanship",
     text: "“Gus and his team transformed our outdated kitchen into a modern masterpiece. Their attention to detail and professionalism were outstanding!”",
     author: "Sarah L., Toronto, ON",
-    imageUrl: exterior1, // Replace with actual image of the client or a placeholder
-    colorful: true, // Use this to style standout testimonials if needed
+    imageUrl: exterior1, 
+    colorful: true,
     status: "done",
     date: "Dec 2017",
   },

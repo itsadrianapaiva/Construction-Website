@@ -2,7 +2,7 @@ import { check } from "../assets";
 import logo4 from "../assets/process/logo4.png";
 import { processIcons, processContent, processText } from "../constants";
 import Button from "./Button";
-import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { LeftCurve, RightCurve } from "./design/Curves";
 import Section from "./Section";
 
 const Process: React.FC = () => {
