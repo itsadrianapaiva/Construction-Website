@@ -5,7 +5,6 @@ import { aboutUsIcons } from "../constants";
 import Generating from "./Generating";
 import Heading from "./Heading";
 import Section from "./Section";
-import guspaulo from "../assets/guspaulo.jpg";
 import {
   PhotoChatMessage,
   Gradient,
@@ -13,6 +12,7 @@ import {
   VideoChatMessage,
 } from "./design/Services";
 import person from "../assets/about/person.svg";
+import workinghands from "../assets/workinghands.jpg";
 
 const AboutUs: React.FC = () => {
   return (
@@ -31,9 +31,9 @@ const AboutUs: React.FC = () => {
                 className="w-full h-full object-cover md:object-right md:opacity-30 opacity-30 xl:opacity-100"
                 width={800}
                 height={730}
-                alt="gus paulo"
+                alt="working hands"
                 loading="lazy"
-                src={guspaulo}
+                src={workinghands}
               />
             </div>
 

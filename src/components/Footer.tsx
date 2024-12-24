@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                 <div className="flex flex-row item-center">
                   <img src={mailicon} width={18} height={18} />
                   <a
-                    href="mailto:paulo@dreammakersconstruction.ca"
+                    href="mailto:gustavo@dreammakersconstruction.ca"
                     className="body-2 text-n-3 pl-3 hover:text-n-4"
                   >
                     paulo@dreammakersconstruction.ca
