@@ -93,23 +93,6 @@ const ContactUs: React.FC = () => {
                     </a>
                   </div>
                 </div>
-
-                <div className="flex flex-col mb-8 lg:mb-0">
-                  <p className="font-bold text-n-2 mb-1">Paulo Gomes</p>
-                  <div className="flex items-center justify-start">
-                    <img src={phone1} width={18} height={18} />
-                    <p className="text-n-3 pl-1">(437) 286-1686</p>
-                  </div>
-                  <div className="flex justify-start">
-                    <img src={mail1} width={18} height={18} />{" "}
-                    <a
-                      className="text-n-3 underline pl-1"
-                      href="mailto:paulo@dreammakersconstruction.ca"
-                    >
-                      paulo@dreammakersconstruction.ca
-                    </a>
-                  </div>
-                </div>
               </div>
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[15.8rem]">

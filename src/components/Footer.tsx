@@ -100,15 +100,6 @@ const Footer: React.FC = () => {
                     gustavo@dreammakersconstruction.ca
                   </a>
                 </div>
-                <div className="flex flex-row item-center">
-                  <img src={mailicon} width={18} height={18} />
-                  <a
-                    href="mailto:gustavo@dreammakersconstruction.ca"
-                    className="body-2 text-n-3 pl-3 hover:text-n-4"
-                  >
-                    paulo@dreammakersconstruction.ca
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -143,7 +134,7 @@ const Footer: React.FC = () => {
 
           <div>
             <p className="caption text-n-4 md:-mt-3 lg:block">
-              Contractor Website Designed by Adriana Paiva
+              Contractor Website Designed by <a className="text-n-3 hover:text-n-2" href="https://itsadrianapaiva.com">Adriana Paiva</a>
             </p>
           </div>
         </div>

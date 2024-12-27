@@ -38,27 +38,24 @@ const AboutUs: React.FC = () => {
             </div>
 
             <div className="relative z-1 max-w-[37rem] ml-auto my-[5rem] md:mt-4">
-              <h4 className="h4 mb-5">From Our Family to Yours!</h4>
+              <h4 className="h4 mb-5">From My Family to Yours!</h4>
               <p className="body-2 mb-[1rem] text-n-3">
-              Gustavo Paiva and Paulo Gomes, two childhood friends that got reunited
-             again in Canada after a few years founded Dream Makers with the purpose 
+              Gustavo Paiva founded Dream Makers with the purpose 
              of bringing quality, reliability, professionalism and craftsmanship in 
              a unique way to our clients. 
               </p>
 
               <p className="body-2 mb-[1rem] text-n-3">
-              Paulo is a tradesman of more than 7 years as a taper, delivering only 
-              the best quality work when it comes to drywall finishing.
-              Gustavo with more than 8 years in the construction industry, 
-              he started as a painter and rapidly engaged in the general contracting 
-              and constructionworld using his connections and project managing skills 
+              With more than 8 years in the construction industry, 
+              Gustavo started as a painter and rapidly engaged in the general contracting 
+              and construction world using his connections and project managing skills 
               to help his customers with all residential renovation and construction needs.
               </p>
 
               <p className="body-2 mb-[1rem] text-n-3">
-              Together, they decided to unite their backgrounds and experiences with 
-              an idea of transforming ideas into reality, making dreams come true 
-              nd delivering great effortless service to our clients homes.
+              This company was created to unite his backgrounds and experiences with an idea of transforming ideas into reality, making dreams come true and delivering great effortless service to clients homes.
+              </p>
+              <p className="body-2 mb-[1rem] text-n-3">
               Your dream project is our priority, and we’re honored to bring
                 it to life with care and dedication.
               </p>
