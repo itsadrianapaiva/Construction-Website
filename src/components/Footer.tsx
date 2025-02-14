@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
 
           <div>
             <p className="caption text-n-4 md:-mt-3 lg:block">
-              Contractor Website Designed by <a className="text-n-3 hover:text-n-2" href="https://itsadrianapaiva.com">Adriana Paiva</a>
+              Designed by <a className="text-n-3 hover:text-n-2" href="https://itsadrianapaiva.com">Adriana Paiva</a>
             </p>
           </div>
         </div>

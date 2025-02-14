@@ -27,7 +27,7 @@ const Portfolio: React.FC = () => {
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] rounded-2xl bg-conic-gradient"
               key={index}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] min-w-[27rem] p-[2.4rem] pointer-events-none"></div>
+              <div className="relative z-2 flex flex-col min-h-[22rem] min-w-[24rem] p-[2.4rem] pointer-events-none"></div>
 
               {index === 3 && <GradientLight />}
 
